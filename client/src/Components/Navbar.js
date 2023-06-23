@@ -3,8 +3,7 @@ function Navbar()
 {   
     
     return(
-        <nav className="text-white w-full h-fit flex justify-between items-center">
-            <h>MATHEW</h>
+        <div className="text-white w-full pt-6 h-fit flex flex-wrap gap-8 justify-center items-center">
             <a className="text-gray-300 hover:text-white" href="#ignites">
                 IGNITES
               </a>
@@ -29,7 +28,7 @@ function Navbar()
               <a className="text-gray-300 hover:text-white" href="#contact">
                 CONTACT
               </a>
-        </nav>
+        </div>
     );
 }
 export default Navbar;
