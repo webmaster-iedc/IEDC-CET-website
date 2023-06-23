@@ -81,7 +81,7 @@ function FeatureTiles()
             {featureData.map((feature, index) => (
               <div
                 key={index}
-                className="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl"
+                className="p-8 space-y-3 text-xl text-center"
               >
                 <span className="inline-block text-blue-500 dark:text-blue-400">
                   {feature.icon}
