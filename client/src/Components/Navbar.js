@@ -1,27 +1,21 @@
 import React from "react";
+import NavLogo from "../Assets/Images/IedcNavbarLogo.png"
 function Navbar()
 {   
     
     return(
-        <nav className="p-3 text-black bg-white h-fit flex w-full justify-center">
-           <div className="w-full h-full bg-gray-400 flex  justify-between">
-                <h>MATHEW</h>
-                <div className="bg-white md:space-x-4 lg:space-x-12">
-                    <h>MATHEW</h>
-                <h>MATHEW</h>
-                <h>MATHEW</h>
-                <h>MATHEW</h>
-                <h>MATHEW</h>
-                <h>MATHEW</h>
-                <h>MATHEW</h>
-                <h>MATHEW</h>
-                </div>
-                
-
-           </div>
-
-
+        <nav className="mb-3 p-3 text-white flex flex-wrap w-full h-fit justify-center items-center">
+            <img className="h-10 w-10 mx-4 my-2" src={NavLogo} href="#"></img>
+            <a className="mx-4 my-2" href="#">IGNITES</a>
+            <a className="mx-4 my-2" href="#">ABOUT</a>
+            <a className="mx-4 my-2" href="#">EVENTS</a>
+            <a className="mx-4 my-2" href="#">ANNOUNCEMENTS</a>
+            <a className="mx-4 my-2" href="#">INO POINTS</a>
+            <a className="mx-4 my-2" href="#">TEAM</a>
+            <a className="mx-4 my-2" href="#">CONTACT</a>
         </nav>
+
+
 
     );
 }
