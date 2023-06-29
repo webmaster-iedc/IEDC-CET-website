@@ -7,19 +7,24 @@ function Navbar() {
   const toggleDropDown=()=>{
     setIsDropDownOpen(!isDropDownOpen);
   };
+  const links = [
+    { title: 'IGNITES', href: '#' },
+    { title: 'ABOUT', href: '#' },
+    { title: 'EVENTS', href: '#' },
+    { title: 'ANNOUNCEMENTS', href: '#' },
+    { title: 'ACHIEVEMENTS', href: '#' },
+    { title: 'INO POINTS', href: '#' },
+    { title: 'TEAM', href: '#' },
+    { title: 'CONTACT', href: '#' }
+  ];
   return (
     <nav className="text-lg  mb-6 mt-4 p-3 text-white flex flex-wrap w-full h-fit justify-center items-center">
       <div className="flex flex-wrap gap-10 items-center">
         <img className="h-10 w-10 mx-4 my-2" src={NavLogo} href="#"></img>
         <div className="hidden md:flex">
-          <a className="mx-4 my-2" href="#">IGNITES</a>
-          <a className="mx-4 my-2" href="#">ABOUT</a>
-          <a className="mx-4 my-2" href="#">EVENTS</a>
-          <a className="mx-4 my-2" href="#">ANNOUNCEMENTS</a>
-          <a className="mx-4 my-2" href="#">ACHIEVEMENTS</a>
-          <a className="mx-4 my-2" href="#">INO POINTS</a>
-          <a className="mx-4 my-2" href="#">TEAM</a>
-          <a className="mx-4 my-2" href="#">CONTACT</a>
+          {links.map((link)=>(
+            <a className="mx-4 my-2" href={link.href} key={link.title}>{link.title}</a>
+          ))}
         </div>
         <div className="md:hidden">
           <button onClick={toggleDropDown}>
@@ -27,14 +32,9 @@ function Navbar() {
           </button>
           <div>{isDropDownOpen && (
             <div className="absolute top-20 left-0 right-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-2xl">
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>IGNITES</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>ABOUT</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>EVENTS</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>ANNOUNCEMENTS</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>ACHIEVEMENTS</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>INO POINTS</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>TEAM</a>
-              <a className="mx-4 my-2" href="#" onClick={toggleDropDown}>CONTACT</a>
+              {links.map((link)=>(
+                <a className="mx-4 my-2" href={link.href} key={link.title} onClick={toggleDropDown}>{link.title}</a>
+              ))}
             </div>
             )}
           </div>
