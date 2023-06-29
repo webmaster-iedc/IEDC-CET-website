@@ -26,91 +26,54 @@ function About() {
     },
   ];
   return (
-    <div className="text-center text-white text-4xl mx-5 font-bold">
-      <h>IEDC at CET</h>
-      {/* <div className="flex flex-col justify-center items-center">
-				{aboutDatas.map((aboutData,index)=>(
-					<div key={index} className="flex justify-center items-center">
-						<div>
-							<h className="text-3xl">{aboutData.title}</h>
-							<p className="text-gray-500 text-xl font-normal">{aboutData.content}</p>
-						</div>
-						<div className="aspect-w-4 aspect-h-3">
-							<img src={aboutData.image} alt="" className="object-cover h-auto w-auto"/>
-						</div>
-					</div>
-				))}
-			</div> */}
-      {/* <div className="grid grid-cols-2 grid-rows-2 gap-4">
-				<div className="flex flex-col justify-center items-center">
-					<h2 className="text-2xl">{aboutDatas[0].title}</h2>
-					<p className="text-gray-500 text-xl font-normal">{aboutDatas[0].content}</p>
-				</div>
-				<div className="flex justify-center items-center w-full h-72">
-					<img src={aboutDatas[0].image} alt="" className="objects-contain max-w-full max-h-full"/>
-				</div>
-				<div className="flex justify-center items-center w-full h-72">
-					<img src={aboutDatas[1].image} alt="" className="objects-contain max-w-full max-h-full"/>
-				</div>
-				<div className="flex flex-col justify-center items-center">
-					<h2 className="text-2xl">{aboutDatas[1].title}</h2>
-					<p className="text-gray-500 text-xl font-normal">{aboutDatas[1].content}</p>
-				</div>
-				<div className="flex flex-col justify-center items-center">
-					<h2 className="text-2xl">{aboutDatas[2].title}</h2>
-					<p className="text-gray-500 text-xl font-normal">{aboutDatas[2].content}</p>
-				</div>
-				<div className="flex justify-center items-center w-full h-72">
-					<img src={aboutDatas[2].image} alt="" className="objects-contain max-w-full max-h-full"/>
-				</div>
-			</div> */}
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center gap-20">
-          <div className="flex flex-col justify-center items-center">
+    <div className=" text-center space-y-4 w-3/4 self-center  text-white text-4xl mx-5 font-bold">
+        <h  >IEDC at CET</h>  
+        <div className=" md:flex-row flex-col flex justify-center items-center gap-20">
+          <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
             <h1 className="text-2xl">{aboutDatas[0].title}</h1>
             <p className="text-gray-500 text-xl font-normal">
               {aboutDatas[0].content}
             </p>
           </div>
-          <div className="flex justify-center items-center w-auto h">
+          <div className="flex justify-center items-center md:w-1/2 w-full ">
             <img
               src={aboutDatas[0].image}
               alt=""
-              className="objects-contain w-full h-full"
+              className="objects-contain w-full h-full rounded-md"
             />
           </div>
         </div>
-        <div className="flex justify-center items-center gap-20">
-          <div className="flex justify-center items-center border-white-800  w-auto h">
-            <img
-              src={aboutDatas[1].image}
-              alt=""
-              className="objects-contain w-full h-full"
-            />
-          </div>
-          <div className="flex flex-col justify-center items-center">
+        <div className=" md:flex-row-reverse flex-col flex justify-center items-center gap-20">
+          <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
             <h1 className="text-2xl">{aboutDatas[1].title}</h1>
             <p className="text-gray-500 text-xl font-normal">
               {aboutDatas[1].content}
             </p>
           </div>
+          <div className="flex justify-center items-center md:w-1/2 w-full h">
+            <img
+              src={aboutDatas[1].image}
+              alt=""
+              className="objects-contain w-full h-full rounded-md "
+            />
+          </div>
         </div>
-        <div className="flex justify-center items-center gap-20">
-          <div className="flex flex-col justify-center items-center">
+        <div className=" md:flex-row flex-col flex justify-center items-center gap-20">
+          <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
             <h1 className="text-2xl">{aboutDatas[2].title}</h1>
             <p className="text-gray-500 text-xl font-normal">
               {aboutDatas[2].content}
             </p>
           </div>
-          <div className="flex justify-center items-center border-red-500 w-auto h">
+          <div className="flex justify-center items-center md:w-1/2 w-full h">
             <img
               src={aboutDatas[2].image}
               alt=""
-              className="objects-contain w-full h-full"
+              className="objects-contain w-full h-full rounded-md"
             />
           </div>
         </div>
-      </div>
+      
     </div>
   );
 }
