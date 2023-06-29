@@ -14,8 +14,8 @@ function NameLogo() {
         <br />
         <img src={BgLogo} alt="" />
         <br />
-        <h className="text-center text-4xl text-white font-bold">
-          "INNOVATION DISTINGUISHES BETWEEN A LEADER AND A FOLLOWER"
+        <h className="p-2 text-center md:text-5xl text-2xl tracking-widest text-white font-black">
+        "INNOVATION DISTINGUISHES BETWEEN A LEADER AND A FOLLOWER"
         </h>
         <p>-Steve Jobs</p>
       </div>
