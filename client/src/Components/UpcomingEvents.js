@@ -32,12 +32,10 @@ export default function UpcomingEvents() {
         }
     ];
 
-    return ( <
-        div className = "w-3/4 text-center  space-y-5 self-center mt-4 mb-2 " >
-        <
-        h className = "mb-2 text-4xl font-bold text-white" > Upcoming Events < /h> <
-        Slider data = { upcomingEvents }
-        /> < /
-        div >
+    return ( 
+    <div className = "w-3/4 text-center  space-y-5 self-center mt-4 mb-2 " >
+        <h className = "mb-2 text-4xl font-bold text-white" > Upcoming Events </h> 
+        <Slider data = { upcomingEvents }/> 
+        </div>
     );
 }
