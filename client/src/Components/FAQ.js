@@ -32,6 +32,7 @@ const FAQSection = () => {
 
   return (
     <div className="mb-4 space-y-3 text-white w-3/4 self-center">
+        <h2 class=" pb-6 text-center text-3xl font-bold">Frequently Asked Questions</h2>
       {faqData.map((faq, index) => (
         <div key={index} className="p-2 bg-[#334155] text-white rounded-md shadow-md ">
           <div className="flex justify-between items-center">
