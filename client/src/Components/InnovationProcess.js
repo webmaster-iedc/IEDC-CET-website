@@ -25,7 +25,7 @@ function InnovationProcess() {
     },
   ];
   return (
-    <div className="flex flex-col justify-center">
+    <div className="w-3/4 self-center flex flex-col justify-center">
       <h1 className="text-white text-center text-5xl font-semibold font-poppins mt-20">
         PROCESS
       </h1>
