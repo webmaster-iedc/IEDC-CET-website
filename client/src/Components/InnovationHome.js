@@ -3,14 +3,21 @@ import Logo from "../Assets/Images/innovation-logo.png";
 
 function InnovationHome(){
     return(
-        <div className="flex flex-col justify-center items-center">
-            <h2 className="text-line font-poppins mt-11 text-6xl font-bold leading-1.5 tracking-normal text-center bg-gradient-to-b from-[#FA1100] to-[#5E5D5D] bg-clip-text text-transparent">INNOVATION ON WHEELS</h2>
-            <p className="font-poppins text-lg mt-4 font-semibold leading-8 text-center text-[#9BA9B3]">INITIATIVE BY IEDC CET</p>
+        
+        <div className="text-white flex flex-col w-full h-fit justify-center items-center">
+        <div className="w-full flex text-center flex-col lg:w-3/4">
+          <h className="font-semibold text-center md:text-6xl text-2xl tracking-widest bg-gradient-to-b from-[#FA1100] to-[#5E5D5D] bg-clip-text text-transparent">
+            INNOVATION ON WHEELS
+          </h>
+          <p>INITIATIVE BY IEDC CET</p>
+          <div className="md:w-1/2 w-3/4 flex flex-col self-center">
             <img src={Logo} alt="" />
-            <p className="font-arya text-4xl mt-[-30px] pt-0 font-normal leading-10 text-white text-center">Learn through collaboration</p>
-            <button class="w-231 h-30 px-7 py-2 mt-8 rounded-lg bg-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">REGISTER</button>
-            <button class="w-231 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">BROCHURE</button>
+            <p className="text-center text-white text-3xl">Learn through collaboration</p>
+            <button class="w-100 h-30 px-7 py-2 mt-8 rounded-lg bg-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">REGISTER</button>
+            <button class="w-100 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">BROCHURE</button>
+            </div>
         </div>
+      </div>
     )
 }
 export default InnovationHome;
