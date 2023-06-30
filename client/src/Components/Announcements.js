@@ -12,7 +12,7 @@ export default function UpcomingEvents() {
         {
             eventName: "INO POINTS",
             date: "Introducing 𝗜𝗡𝗢 𝗣𝗢𝗜𝗡𝗧𝗦 A revolution in how CET thinks.𝗧",
-            image: "https://randomwordgenerator.com/img/picture-generator/52e4d641495ba414f1dc8460962e33791c3ad6e04e507441722978d69f4ac2_640.jpg",
+            image: "",
             registrationLink: "",
             brochureLink: ""
         }

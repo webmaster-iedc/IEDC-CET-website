@@ -28,11 +28,11 @@ const testimonials = [
   ];
   
   return(
-        <div class="p-4 container self-center text-white">
+        <div class="p-4 w-3/4 self-center text-white">
   <section class="mb-32 text-center">
     <h2 class="mb-12 pb-4 text-center text-3xl font-bold">Testimonials</h2>
 
-    <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
+    <div class="grid gap-6 lg:grid-cols-3 md:flex-col xl:gap-x-12">
       {testimonials.map((testimonial, index) => (
         <div class="mb-6 lg:mb-0" key={index}>
           <div class="relative block border rounded-lg ">

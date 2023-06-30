@@ -12,28 +12,28 @@ export default function UpcomingEvents() {
         {
             eventName: "Patent Grant",
             date: "Congratulations to Prof. Reshmi Bhooshan (faculty mentor), Praveen Sekhar (2014 AEI), and Lia Joseph (2014 AEI)on being successfully granted patent for the invention titled “An Automated duct fan-based Wall Climbing Device”.",
-            image: "https://randomwordgenerator.com/img/picture-generator/52e4d641495ba414f1dc8460962e33791c3ad6e04e507441722978d69f4ac2_640.jpg",
+            image: "",
             registrationLink: "",
             brochureLink: ""
         },
         {
             eventName: "MHRD National Innovation Fest 2019",
             date: "Jithin Sankar S5EE, Vishnu vikraman S5EE and Akshay Krishna R S5ME were finalists at National Innovation Fest 2019 hosted by MHRD Govt. of India.",
-            image: "https://randomwordgenerator.com/img/picture-generator/52e4d641495ba414f1dc8460962e33791c3ad6e04e507441722978d69f4ac2_640.jpg",
+            image: "",
             registrationLink: "",
             brochureLink: ""
         },
         {
             eventName: "V-Guard Big Idea Challenge 2019",
             date: "Jithin Sankar S5EE, Vishnu vikraman S5EE and Akshay Krishna R S5ME bagged the first runner up position in the V-Guard Big Idea Challenge conducted in 2019.",
-            image: "https://randomwordgenerator.com/img/picture-generator/52e4d641495ba414f1dc8460962e33791c3ad6e04e507441722978d69f4ac2_640.jpg",
+            image: "",
             registrationLink: "",
             brochureLink: ""
         },
         {
             eventName: "Ketcon 2019",
             date: "Amal C Shaji, Akshay Vijayan, Devika Ramgopal secured first prize in paper presentation in the track 'Developments in Computer Applications' conducted as a part of KTU Techfest 2019.",
-            image: "https://randomwordgenerator.com/img/picture-generator/52e4d641495ba414f1dc8460962e33791c3ad6e04e507441722978d69f4ac2_640.jpg",
+            image: "",
             registrationLink: "",
             brochureLink: ""
         },
