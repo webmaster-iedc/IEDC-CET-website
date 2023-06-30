@@ -31,9 +31,9 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="mb-4 space-y-2 text-white w-3/4 self-center">
+    <div className="mb-4 space-y-3 text-white w-3/4 self-center">
       {faqData.map((faq, index) => (
-        <div key={index} className="p-2 text-white rounded-md border border-gray-200 py-3">
+        <div key={index} className="p-2 bg-[#334155] text-white rounded-md shadow-md ">
           <div className="flex justify-between items-center">
             <div className="flex-1">
               <button
@@ -45,10 +45,15 @@ const FAQSection = () => {
             </div>
             <div>
               <button
-                className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900  bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700   dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+                className=""
                 onClick={() => handleQuestionClick(index)}
               >
-                {expandedQuestion === index ? '-' : '+'}
+                {expandedQuestion === index ? <svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 13.3477H21" stroke="#9BA9B3" stroke-width="5.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    : <svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 3.34766V23.3477M3 13.3477H23" stroke="#9BA9B3" stroke-width="5.14286" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>}
               </button>
             </div>
           </div>
