@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa';
-import Logo from "../Assets/Images/IEDC-logo-2.png";
+import NavLogo from "../Assets/Images/IedcNavbarLogo.png";
 
 function InnovationNavbar() {
   const [isDropDownOpen,setIsDropDownOpen]=useState(false);
@@ -16,15 +16,14 @@ function InnovationNavbar() {
     { title: 'CONTACT', href: '#' }
   ];
   return (
-    <nav className="py-5 flex flex-wrap w-full h-fit justify-evenly items-center">
-      {/* <div className="flex flex-wrap justify-evenly items-center"> */}
-        <img className="h-15 w-20" src={Logo} href="#"></img>
-        <div className="flex justify-center gap-10 items-top">
-          {links.map((link)=>(
-            <a className="font-inter text-base font-normal leading-6 tracking-normal text-gray-400" href={link.href} key={link.title}>{link.title}</a>
-          ))}
+    <nav className="lg:text-lg text-md  mb-6 mt-4  text-white flex flex-wrap w-full  justify-center items-center">
+      <div className="items-center">
+        <div className="hidden md:flex md:flex-wrap items-center">
+          <img className="h-10 w-10 mx-4 " src={NavLogo} href="#"></img>
+          {links.map((link)=>(<a className="lg:mx-4 mx-2" href={link.href} key={link.title}>{link.title}</a>))}
         </div>
-        {/* <div className="md:hidden">
+        <div className="md:hidden flex ">
+        <img className="h-10 w-10 mx-4" src={NavLogo} href="#"></img>
           <button onClick={toggleDropDown}>
             <FaBars className="text-white text-2xl" />
           </button>
@@ -36,8 +35,8 @@ function InnovationNavbar() {
             </div>
             )}
           </div>
-        </div> */}
-      {/* </div> */}
+        </div>
+      </div>
     </nav>
   );
 }

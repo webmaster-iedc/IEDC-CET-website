@@ -6,17 +6,6 @@ import Objectives from "../Assets/Images/innovationobjectives.png"
 
 function InnovationAbout(){
   return(
-    // <div className="mt-40 w-3/4">
-		// 	<div className="flex justify-center items-center">
-		// 		<div className="flex flex-col justify-center">
-		// 			<h className="flex mb-10 text-white text-5xl font-semibold font-poppins">VISION</h>
-		// 			<p className="flex text-gray-500 text-lg font-semibold font-inter">To develop a public outreach among all the professional colleges, innovative student community in Kerala</p>
-		// 		</div>
-		// 		{/* <div className="flex flex-wrap justify-center items-center md:w-1/2 w-full">
-		// 			<img src={Vision} alt=""/>
-		// 		</div> */}
-		// 	</div>
-		// </div>
 		<div className="flex justify-center">
 			<div className="flex flex-col justify-center gap-12">
 				<div className="mt-40 flex flex-col md:flex-row justify-between px-20 mx-5 gap-10">
