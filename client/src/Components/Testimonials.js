@@ -28,7 +28,7 @@ const testimonials = [
   ];
   
   return(
-        <div class="p-4 w-3/4 self-center text-white">
+        <div class="p-4 w-3/4 l self-center text-white">
   <section class="mb-32 text-center">
     <h2 class="mb-12 pb-4 text-center text-3xl font-bold">Testimonials</h2>
 

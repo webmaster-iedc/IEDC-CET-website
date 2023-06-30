@@ -17,19 +17,19 @@ function Innovation()
       ];
       const faqData=[
         {
-          question: 'Question a',
+          question: 'What is Innovation on wheels ?',
           answer: 'Answer 1',
         },
         {
-          question: 'Question 2',
+          question: 'How to register ?',
           answer: 'Answer 2',
         },
         {
-          question: 'Question 3',
+          question: 'What are the advantages in joining the program ?',
           answer: 'Answer 3',
         },
         {
-          question: 'Question 4',
+          question: 'How the community works ?',
           answer: 'Answer 4',
         },
       ];
