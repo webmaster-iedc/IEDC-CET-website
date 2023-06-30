@@ -10,6 +10,7 @@ import Achievements from "../Components/Achievements";
 import ContactPanel from "../Components/ContactPanel";
 import Footer from "../Components/Socials";
 import Ino from "../Components/InoPoints";
+import FAQSection from "../Components/FAQ";
 function Main() {
     return ( 
     <div className = "bg-black min-h-screen w-full flex flex-col" >
@@ -22,6 +23,7 @@ function Main() {
         <Announcements />
         <Achievements />
         <Testimonials/>
+        <FAQSection/>
         <ContactPanel/>
         <Footer/>
     </div>
