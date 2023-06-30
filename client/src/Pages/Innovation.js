@@ -4,6 +4,7 @@ import InnovationHome from "../Components/InnovationHome";
 import Background from "../Assets/Images/innovation-bg-2.jpg";
 import InnovationAbout from "../Components/InnovationAbout";
 import FAQSection from "../Components/FAQ";
+import InnovationProcess from "../Components/InnovationProcess"; 
 function Innovation()
 {
     
@@ -38,6 +39,7 @@ function Innovation()
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
         <InnovationAbout />
+        <InnovationProcess/>
         <FAQSection faqData={faqData }/>
       
     </div>
