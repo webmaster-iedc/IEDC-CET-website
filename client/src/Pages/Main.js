@@ -4,6 +4,7 @@ import NameLogo from "../Components/NameLogo";
 import FeatureTiles from "../Components/FeatureTiles/FeatureTiles";
 import About from "../Components/About";
 import Testimonials from "../Components/Testimonials";
+import Testim from "../Test/Testim";
 import UpcomingEvents from "../Components/UpcomingEvents";
 import Announcements from "../Components/Announcements";
 import Achievements from "../Components/Achievements";
@@ -52,6 +53,7 @@ function Main() {
         <Announcements />
         <Achievements />
         <Testimonials/>
+        <Testim />
         <FAQSection faqData={faqData }/>
         <ContactPanel/>
         <Footer/>
