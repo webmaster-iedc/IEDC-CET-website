@@ -13,6 +13,7 @@ import Achievements from "../Components/Achievements";
 import ContactPanel from "../Components/ContactPanel";
 import Footer from "../Components/Socials";
 import Ino from "../Components/InoPoints";
+import FAQSection from "../Components/FAQ";
 function Main() {
     return ( 
 <<<<<<< HEAD
@@ -36,6 +37,7 @@ function Main() {
         <Announcements />
         <Achievements />
         <Testimonials/>
+        <FAQSection/>
         <ContactPanel/>
         <Footer/>
     </div>
