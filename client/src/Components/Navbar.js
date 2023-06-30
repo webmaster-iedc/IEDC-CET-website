@@ -19,18 +19,10 @@ function Navbar() {
   ];
   return (
     <nav className="lg:text-lg text-md  mb-6 mt-4  text-white flex flex-wrap w-full  justify-center items-center">
-      <div className=" items-center">
-        
-        <div className="hidden md:flex md:flex-wrap">
+      <div className="items-center">
+        <div className="hidden md:flex md:flex-wrap items-center">
           <img className="h-10 w-10 mx-4 " src={NavLogo} href="#"></img>
-          <a className="lg:mx-4 mx-2 " href="#">IGNITES</a>
-          <a className="lg:mx-4 mx-2 " href="#">ABOUT</a>
-          <a className="lg:mx-4 mx-2" href="#">EVENTS</a>
-          <a className="lg:mx-4 mx-2" href="#">ANNOUNCEMENTS</a>
-          <a className="lg:mx-4 mx-2" href="#">ACHIEVEMENTS</a>
-          <a className="lg:mx-4 mx-2" href="#">INO POINTS</a>
-          <a className="lg:mx-4 mx-2" href="#">TEAM</a>
-          <a className="lg:mx-4 mx-2" href="#">CONTACT</a>
+          {links.map((link)=>(<a className="lg:mx-4 mx-2" href={link.href} key={link.title}>{link.title}</a>))}
         </div>
         <div className="md:hidden flex ">
         <img className="h-10 w-10 mx-4" src={NavLogo} href="#"></img>
