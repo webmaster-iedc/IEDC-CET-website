@@ -53,17 +53,17 @@ function InnovationHighlights() {
       </h1>
       <hr className="mt-2 border-t-2 w-36 mx-auto mb-20 border-red-700" />
       <div className="relative flex">
-				<button className="absolute left-32 top-1/2 scale-x-[-1]" onClick={decrement}>
+				<button className="absolute left-3 md:left-32 top-1/2 scale-x-[-1] w-8 h-8 md:h-auto md:w-auto" onClick={decrement}>
 					<img src={Arrow} alt="" />
 				</button>
-        <div className={`flex flex-col mx-auto justify-center item-center rounded-2xl border-2 border-[#0D0F10] bg-black w-2/5 h-auto transition-transform duration-300 transform ${isTransitioning ?( direction ? '-translate-x-full opacity-0' : 'translate-x-full opacity-0' ) : 'translate-x-0 opacity-100'}` }>
+        <div className={`flex flex-col mx-auto justify-center item-center rounded-2xl border-2 border-[#0D0F10] bg-black w-3/4 md:w-2/5 h-auto transition-transform duration-300 transform ${isTransitioning ?( direction ? '-translate-x-full opacity-0' : 'translate-x-full opacity-0' ) : 'translate-x-0 opacity-100'}` }>
           <img src={items[count].image} alt="" />
           <div className="text-[#9BA9B3] text-center text-base font-inter font-semibold p-5">
             <p>{items[count].content}</p>
             <p>Date: {items[count].date}</p>
           </div>
         </div>
-        <button className="absolute right-32 top-1/2" onClick={increment}>
+        <button className="absolute right-3 md:right-32 top-1/2 w-8 h-8 md:h-auto md:w-auto" onClick={increment}>
           <img src={Arrow} alt="" />
         </button>
       </div>
