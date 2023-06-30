@@ -9,6 +9,7 @@ function Navbar() {
     setIsDropDownOpen(!isDropDownOpen);
   };
 
+
   const navbarItems = [
     { text: "IGNITES", href: "#" },
     { text: "ABOUT", href: "#" },
@@ -19,6 +20,8 @@ function Navbar() {
     { text: "TEAM", href: "#" },
     { text: "CONTACT", href: "#" }
   ];
+
+
 
   return (
     <nav className="lg:text-lg text-md mb-6 mt-4 text-white flex flex-wrap w-full justify-center items-center">
@@ -38,10 +41,12 @@ function Navbar() {
           </button>
           {isDropDownOpen && (
             <div className="absolute top-20 left-0 right-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-2xl">
+
               {navbarItems.map((item, index) => (
                 <a key={index} className="mx-4 my-2" href={item.href} onClick={toggleDropDown}>
                   {item.text}
                 </a>
+
               ))}
             </div>
           )}
