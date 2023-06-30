@@ -3,23 +3,14 @@ import { FaBars } from 'react-icons/fa';
 import NavLogo from "../Assets/Images/IedcNavbarLogo.png";
 
 
-function Navbar() {
+function Navbar({navbarItems}) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const toggleDropDown = () => {
     setIsDropDownOpen(!isDropDownOpen);
   };
 
 
-  const navbarItems = [
-    { text: "IGNITES", href: "#" },
-    { text: "ABOUT", href: "#" },
-    { text: "EVENTS", href: "#" },
-    { text: "ANNOUNCEMENTS", href: "#" },
-    { text: "ACHIEVEMENTS", href: "#" },
-    { text: "INO POINTS", href: "#" },
-    { text: "TEAM", href: "#" },
-    { text: "CONTACT", href: "#" }
-  ];
+ 
 
 
 
