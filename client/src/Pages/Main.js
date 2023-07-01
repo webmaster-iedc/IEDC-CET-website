@@ -15,7 +15,7 @@ import FAQSection from "../Components/FAQ";
 function Main() {
     //main bar components to enable code reusability
    const  navbarItems=  [
-        { text: "INNOVATION", href: "/innovation" },
+        { text: "IGNITES", href: "#" },
         { text: "ABOUT", href: "#" },
         { text: "EVENTS", href: "#" },
         { text: "ANNOUNCEMENTS", href: "#" },
