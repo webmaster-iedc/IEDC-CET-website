@@ -11,7 +11,7 @@ function Innovation()
 {
     
       const  navbarItems=  [
-        { text: "HOME", href: "#" },
+        { text: "HOME", href: "/" },
         { text: "ABOUT", href: "#" },
         { text: "ANNOUNCEMENTS", href: "#" },
         { text: "HIGHLLIGHTS", href: "#" },
