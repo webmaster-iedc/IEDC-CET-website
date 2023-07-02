@@ -11,9 +11,9 @@ const ContactInfo = (props) => {
 }
 
 
-const ContactPanel = () => {
+const ContactPanel = ( {sectionRef}) => {
     return (
-        <div className="bg-[#5658DD] self-center rounded-md px-4 py-12 flex flex-col space-y-2 md:w-1/3 text-center ">
+        <div  ref={sectionRef} className="bg-[#5658DD] self-center rounded-md px-4 py-12 flex flex-col space-y-2 md:w-1/3 text-center ">
           <ContactInfo name="Rizvan MS" desig="CEO" email="ceoiedc@cet.ac.in" />
           <ContactInfo name="Treasa Mariya" desig="PRO" email="proiedc@cet.ac.in" />
         </div>

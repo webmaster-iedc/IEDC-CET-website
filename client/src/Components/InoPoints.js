@@ -2,9 +2,9 @@ import React from "react";
 import '../index.css';
 import iedcvideo from "../Assets/Videos/INO.mp4";
 
-function Ino() {
+function Ino( {sectionRef}) {
   return (
-    <div className=" w-3/4  self-center">
+    <div  ref={sectionRef} className=" w-3/4  self-center">
       <div><p className="text-[#eceded] text-5xl bold  text-center font-bold">INO Points</p></div>
       <br></br>
       <br></br>

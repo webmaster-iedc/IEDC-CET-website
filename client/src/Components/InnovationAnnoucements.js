@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "../Assets/Images/highlights1.png"
 import Arrow from "../Assets/Images/arrowvector.png";
 
-function InnovationAnnoucements(){
+function InnovationAnnoucements( {sectionRef}){
 	const items = [
     {
       image: Image,
@@ -66,7 +66,7 @@ function InnovationAnnoucements(){
   };
 
 	return(
-		<div className="flex flex-col justify-center">
+		<div  ref={sectionRef} className="flex flex-col justify-center">
 			<h1 className="text-white text-center text-5xl font-semibold font-poppins mt-20">
 				Annoucements
 			</h1>

@@ -3,7 +3,7 @@ import Vision from "../Assets/Images/our_vision.jpg";
 import AboutUs from "../Assets/Images/About.jpeg";
 import Objectives from "../Assets/Images/Objectives.jpg";
 
-function About() {
+function About({ sectionRef }) {
   const aboutDatas = [
     {
       image: Vision,
@@ -26,10 +26,10 @@ function About() {
   ];
 
   return (
-    <div className="text-center space-y-4 w-3/4 self-center text-white text-4xl mx-5 font-bold">
+    <div ref={sectionRef} className="text-center space-y-4 w-3/4 self-center text-white text-4xl mx-5 font-bold">
       <h>IEDC at CET</h>
       <div className="md:flex-row flex-col flex justify-center items-center gap-20">
-        <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
+        <div className="md:w-1/2 w-full md:flex-col justify-center items-center md:text-start">
           <h1 className="text-2xl">{aboutDatas[0].title}</h1>
           <p className="text-gray-500 text-xl font-normal">
             {aboutDatas[0].content}
@@ -44,7 +44,7 @@ function About() {
         </div>
       </div>
       <div className="md:flex-row-reverse flex-col flex justify-center items-center gap-20">
-        <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
+        <div className="md:w-1/2 w-full md:flex-col justify-center items-center md:text-start">
           <h1 className="text-2xl">{aboutDatas[1].title}</h1>
           <p className="text-gray-500 text-xl font-normal">
             {aboutDatas[1].content}
@@ -59,7 +59,7 @@ function About() {
         </div>
       </div>
       <div className="md:flex-row flex-col flex justify-center items-center gap-20">
-        <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
+        <div className="md:w-1/2 w-full md:flex-col justify-center items-center md:text-start">
           <h1 className="text-2xl">{aboutDatas[2].title}</h1>
           <p className="text-gray-500 text-xl font-normal">
             {aboutDatas[2].content}

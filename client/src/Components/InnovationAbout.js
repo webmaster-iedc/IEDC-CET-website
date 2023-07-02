@@ -4,7 +4,7 @@ import About from "../Assets/Images/innovationabout.png"
 import Objectives from "../Assets/Images/innovationobjectives.png"
 
 
-function InnovationAbout(){
+function InnovationAbout( {sectionRef}){
 	const aboutDatas = [
 		{
 		  image: Vision,
@@ -27,7 +27,7 @@ function InnovationAbout(){
 	  ];
 	
 	  return (
-		<div className="mt-20  space-y-4 w-3/4 self-center text-white text-4xl mx-5 font-bold">
+		<div  ref={sectionRef} className="mt-20  space-y-4 w-3/4 self-center text-white text-4xl mx-5 font-bold">
 		  
 		  <div className="md:flex-row flex-col flex justify-center items-center gap-20">
 			<div className="md:w-1/2 w-full md:flex-col justify-center items-center">

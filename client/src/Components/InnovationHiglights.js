@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Highlights1 from "../Assets/Images/highlights1.png";
 import Arrow from "../Assets/Images/arrowvector.png";
 
-function InnovationHighlights() {
+function InnovationHighlights( {sectionRef}) {
   const items = [
     {
       image: Highlights1,
@@ -47,7 +47,7 @@ function InnovationHighlights() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mb-5">
+    <div   ref={sectionRef} className="flex flex-col justify-center items-center mb-5">
       <h1 className="text-white text-center text-5xl font-semibold font-poppins mt-20">
         HIGHLIGHTS
       </h1>

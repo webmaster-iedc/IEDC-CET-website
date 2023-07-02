@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FAQSection = ({faqData}) => {
+const FAQSection = ({faqData}, {sectionRef}) => {
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
   
@@ -14,7 +14,7 @@ const FAQSection = ({faqData}) => {
   };
 
   return (
-    <div className="mb-4 mt-20 space-y-3 text-white md:w-2/3 w-3/4 self-center">
+    <div  ref={sectionRef} className="mb-4 mt-20 space-y-3 text-white md:w-2/3 w-3/4 self-center">
         <h2 class="text-center text-3xl font-bold">FAQs</h2>
         <hr className="border-t-2 w-12 mx-auto mb-36 border-red-700" />
           {faqData.map((faq, index) => (

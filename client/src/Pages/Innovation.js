@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Navbar from "../Components/Navbar";
 import InnovationHome from "../Components/InnovationHome";
 import Background from "../Assets/Images/innovation-bg-2.jpg";
@@ -7,16 +7,22 @@ import FAQSection from "../Components/FAQ";
 import InnovationProcess from "../Components/InnovationProcess"; 
 import InnovationHighlights from "../Components/InnovationHiglights";
 import InnovationAnnoucements from "../Components/InnovationAnnoucements";
+import InnovationContact from "../Components/InnovationContact";
 function Innovation()
 {
-    
-      const  navbarItems=  [
-        { text: "HOME", href: "/" },
-        { text: "ABOUT", href: "#" },
-        { text: "ANNOUNCEMENTS", href: "#" },
-        { text: "HIGHLLIGHTS", href: "#" },
-        { text: "FAQs", href: "#" },
-        { text: "CONTACT", href: "#" }
+
+      const aboutSectionRef = useRef(null);
+      const announcementsSectionRef = useRef(null); 
+      const highlightsSectionRef = useRef(null);
+      const faqsSectionRef = useRef(null);
+      const contactSectionRef = useRef(null);
+      const navbarItems = [
+        { text: "INNOVATION", href: "/innovation" },
+        { text: "ABOUT", href: "/innovation/#About", sectionRef: aboutSectionRef },
+        { text: "ANNOUNCEMENTS", href: "/innovation/#Annoucements", sectionRef: announcementsSectionRef },
+        { text: "HIGHLIGHTS", href: "/innovation/#Highlights", sectionRef: highlightsSectionRef },
+        { text: "FAQs", href: "/innovation/#FAQS", sectionRef: faqsSectionRef },
+        { text: "CONTACT", href: "/innovation/#Contact", sectionRef: contactSectionRef },
       ];
       const faqData=[
         {
@@ -40,11 +46,12 @@ function Innovation()
     <div className = "bg-black min-h-screen w-full flex flex-col" >
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
-        <InnovationAbout />
+        <InnovationAbout  sectionRef={aboutSectionRef}/>
         <InnovationProcess/>,
-        <InnovationAnnoucements />
-        <InnovationHighlights />
-        <FAQSection faqData={faqData }/>
+        <InnovationAnnoucements sectionRef={announcementsSectionRef}/>
+        <InnovationHighlights sectionRef={highlightsSectionRef}/>
+        <FAQSection faqData={faqData } sectionRef={faqsSectionRef}/>
+        <InnovationContact sectionRef={contactSectionRef} />
     </div>
      );
 }

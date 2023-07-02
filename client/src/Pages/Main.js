@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../Components/Navbar";
 import NameLogo from "../Components/NameLogo";
 import FeatureTiles from "../Components/FeatureTiles/FeatureTiles";
@@ -14,15 +14,22 @@ import Ino from "../Components/InoPoints";
 import FAQSection from "../Components/FAQ";
 function Main() {
     //main bar components to enable code reusability
-   const  navbarItems=  [
+    const aboutSectionRef = useRef(null);
+    const upcomingEventsSectionRef = useRef(null);
+    const announcementsSectionRef = useRef(null);
+    const achievementsSectionRef = useRef(null);
+    const inoSectionRef = useRef(null);
+    const testimonialsSectionRef = useRef(null);
+    const contactSectionRef = useRef(null);
+    const  navbarItems=  [
         { text: "INNOVATION", href: "/innovation" },
-        { text: "ABOUT", href: "#" },
-        { text: "EVENTS", href: "#" },
-        { text: "ANNOUNCEMENTS", href: "#" },
-        { text: "ACHIEVEMENTS", href: "#" },
-        { text: "INO POINTS", href: "#" },
-        { text: "TEAM", href: "#" },
-        { text: "CONTACt", href: "#" }
+        { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
+        { text: "EVENTS", href: "#Events",sectionRef:upcomingEventsSectionRef },
+        { text: "ANNOUNCEMENTS", href: "#Annoucements",sectionRef:announcementsSectionRef },
+        { text: "ACHIEVEMENTS", href: "#Achievements",sectionRef:achievementsSectionRef },
+        { text: "INO POINTS", href: "#INO",sectionRef:inoSectionRef },
+        { text: "TEAM", href: "#Testimonials",sectionRef:testimonialsSectionRef },
+        { text: "CONTACt", href: "#Contacts",sectionRef:contactSectionRef }
       ];
     const faqData=[
         {
@@ -47,15 +54,15 @@ function Main() {
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />
-        <About />
-        <Ino/>
-        <UpcomingEvents />
-        <Announcements />
-        <Achievements />
-        <Testimonials/>
+        <About sectionRef={aboutSectionRef} />
+        <Ino sectionRef={inoSectionRef}/>
+        <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
+        <Announcements sectionRef={announcementsSectionRef} />
+        <Achievements sectionRef={achievementsSectionRef} />
+        <Testimonials sectionRef={testimonialsSectionRef} />
         <Testim />
-        <FAQSection faqData={faqData }/>
-        <ContactPanel/>
+        <FAQSection faqData={faqData} />
+        <ContactPanel sectionRef={contactSectionRef} />
         <Footer/>
     </div>
     );

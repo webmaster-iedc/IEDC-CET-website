@@ -2,25 +2,23 @@ import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa';
 import NavLogo from "../Assets/Images/IedcNavbarLogo.png";
 
-
 function Navbar({navbarItems}) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const toggleDropDown = () => {
     setIsDropDownOpen(!isDropDownOpen);
   };
-
-
- 
-
-
-
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <nav className="lg:text-lg text-md mb-6 mt-4 text-white flex flex-wrap w-full justify-center items-center">
       <div className="items-center">
-        <div className="hidden md:flex md:flex-wrap">
+        <div className="hidden md:flex md:flex-wrap items-center">
           <img className="h-10 w-10 mx-4" src={NavLogo} alt="Navbar Logo" />
           {navbarItems.map((item, index) => (
-            <a key={index} className="lg:mx-4 mx-2" href={item.href}>
+            <a key={index} className="lg:mx-4 mx-2" href={item.href}  onClick={() => scrollToSection(item.sectionRef)}>
               {item.text}
             </a>
           ))}

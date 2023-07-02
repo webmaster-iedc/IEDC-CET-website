@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "./Slider";
 
-export default function UpcomingEvents() {
+export default function UpcomingEvents({sectionRef}) {
     const Achievements = [{
             eventName: "Patent Grant",
             date: "Congratulations to Dr Rani S, Dr Muhammed Arif, Sneha Edla and Ananthan D Thampi on being successfully granted patent for developing a green cutting fluid that has the potential to reduce the country's dependence on imported cutting fluid.",
@@ -40,7 +40,7 @@ export default function UpcomingEvents() {
     ];
 
     return ( 
-        <div className = "w-3/4 text-center  space-y-5 self-center mt-4 mb-2 " >
+        <div  ref={sectionRef} className = "w-3/4 text-center  space-y-5 self-center mt-4 mb-2 " >
         <h className = "mb-2 text-4xl font-bold text-white" > Achievements </h>
         <Slider data = { Achievements }/>
         </div >
