@@ -1,5 +1,10 @@
 import React from "react";
 import Slider from "./Slider";
+import PatentGrant1 from "../Assets/Images/patentgrant.png";
+import PatentGrant2 from "../Assets/Images/patentgrant2.jpg";
+import Mhrd from "../Assets/Images/mhrd.jpg";
+import VGuard from "../Assets/Images/vguard.jpg";
+import KetCon from "../Assets/Images/ketcon.jpg";
 
 export default function UpcomingEvents({sectionRef}) {
     const Achievements = [{

@@ -17,7 +17,7 @@ function Innovation()
       const faqsSectionRef = useRef(null);
       const contactSectionRef = useRef(null);
       const navbarItems = [
-        { text: "INNOVATION", href: "/innovation" },
+        { text: "HOME", href: "/" },
         { text: "ABOUT", href: "/innovation/#About", sectionRef: aboutSectionRef },
         { text: "ANNOUNCEMENTS", href: "/innovation/#Annoucements", sectionRef: announcementsSectionRef },
         { text: "HIGHLIGHTS", href: "/innovation/#Highlights", sectionRef: highlightsSectionRef },

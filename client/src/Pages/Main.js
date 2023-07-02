@@ -59,7 +59,7 @@ function Main() {
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <Announcements sectionRef={announcementsSectionRef} />
         <Achievements sectionRef={achievementsSectionRef} />
-        <Testimonials sectionRef={testimonialsSectionRef} />
+        {/* <Testimonials sectionRef={testimonialsSectionRef} /> */}
         <Testim />
         <FAQSection faqData={faqData} />
         <ContactPanel sectionRef={contactSectionRef} />
