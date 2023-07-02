@@ -22,7 +22,7 @@ function Main() {
         { text: "ACHIEVEMENTS", href: "#" },
         { text: "INO POINTS", href: "#" },
         { text: "TEAM", href: "#" },
-        { text: "CONTACt", href: "#" }
+        { text: "CONTACT", href: "#" }
       ];
     const faqData=[
         {

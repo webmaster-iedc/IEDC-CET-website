@@ -26,8 +26,8 @@ function About() {
   ];
 
   return (
-    <div className="text-center space-y-4 w-3/4 self-center text-white text-4xl mx-5 font-bold">
-      <h>IEDC at CET</h>
+    <div className="text-left space-y-4 w-3/4 self-center text-white text-4xl mx-5 font-bold">
+      <h className="">IEDC at CET</h>
       <div className="md:flex-row flex-col flex justify-center items-center gap-20">
         <div className="md:w-1/2 w-full md:flex-col justify-center items-center">
           <h1 className="text-2xl">{aboutDatas[0].title}</h1>
