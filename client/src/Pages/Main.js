@@ -43,7 +43,7 @@ function Main() {
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
+    <div className = "bg-black min-h-screen w-full flex flex-col gap-16" >
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />
