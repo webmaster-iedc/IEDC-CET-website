@@ -15,7 +15,7 @@ function Ino( {sectionRef}) {
           
           <p className="text-[#9ca9b3] text-xl text-left ">Introducing 𝗜𝗡𝗢 𝗣𝗢𝗜𝗡𝗧𝗦 A revolution in how CET thinks. Your work and hardships will now be recognized by 𝗜𝗘𝗗𝗖 𝗖𝗘𝗧. Earn through registrations to events and workshops Redeem cash prize and vouchers. So what are you waiting for !! Start farming your INO POINTS now. 𝗖𝗢𝗠𝗣𝗘𝗧𝗘 𝗖𝗢𝗟𝗟𝗘𝗖𝗧 𝗖𝗢𝗡𝗡𝗘𝗖𝗧</p>
         </div>
-        <video width={528} height={290.4} controls src={iedcvideo} autoPlay/>
+        <video width={528} height={290.4} controls src={iedcvideo} />
       </div>
     </div>
   );
