@@ -5,7 +5,7 @@ export default function UpcomingEvents( {sectionRef}) {
     const Announcements = [{
             eventName: "Quickfolio",
             date: "Sign up for Quickfolio now:  https://www.quickfolio.me/",
-            image: "./buildclub.jpg",
+            image: Quickfolio,
             registrationLink: "",
             brochureLink: ""
         },

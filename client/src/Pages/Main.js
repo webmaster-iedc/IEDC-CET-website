@@ -3,8 +3,8 @@ import Navbar from "../Components/Navbar";
 import NameLogo from "../Components/NameLogo";
 import FeatureTiles from "../Components/FeatureTiles/FeatureTiles";
 import About from "../Components/About";
-import Testimonials from "../Components/Testimonials";
-import Testim from "../Test/Testim";
+
+import Testim from "../Components/Test/Testim";
 import UpcomingEvents from "../Components/UpcomingEvents";
 import Announcements from "../Components/Announcements";
 import Achievements from "../Components/Achievements";
@@ -50,7 +50,7 @@ function Main() {
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
+    <div className = "bg-black min-h-screen w-full flex flex-col gap-16" >
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />
