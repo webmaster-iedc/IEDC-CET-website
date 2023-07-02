@@ -1,11 +1,14 @@
 import React from "react";
 import Slider from "./Slider";
 
+import inovideo from "../Assets/Videos/INO.mp4";
+import Quickfolio from "../Assets/Images/quickfolio.jpg"
+
 export default function UpcomingEvents() {
     const Announcements = [{
             eventName: "Quickfolio",
             date: "Sign up for Quickfolio now:  https://www.quickfolio.me/",
-            image: "./buildclub.jpg",
+            image: Quickfolio,
             registrationLink: "",
             brochureLink: ""
         },
