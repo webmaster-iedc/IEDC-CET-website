@@ -1,5 +1,5 @@
 import React from "react";
-import BgLogo from "../Assets/Images/bgLogo.png";
+import BgLogo from "../../Assets/Images/NameLogo/bgLogo.png";
 
 function NameLogo() {
   return (

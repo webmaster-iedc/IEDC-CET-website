@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "./Slider";
-import BuildClub from "../Assets/Images/buildclub.jpg";
-import YIP from "../Assets/Images/yip.jpg";
-import Balm from "../Assets/Images/balmdesignathon.jpg";
-import YipIdeaFest from "../Assets/Images/yipideafest.jpg";
+import BuildClub from "../../Assets/Images/UpcomingEvents/buildclub.jpg";
+import YIP from "../../Assets/Images/UpcomingEvents/yip.jpg";
+import Balm from "../../Assets/Images/UpcomingEvents/balmdesignathon.jpg";
+import YipIdeaFest from "../../Assets/Images/UpcomingEvents/yipideafest.jpg";
 
 export default function UpcomingEvents( {sectionRef}) {
     const upcomingEvents = [{
