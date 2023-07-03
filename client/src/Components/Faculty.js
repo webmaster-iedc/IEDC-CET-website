@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "./Slider2";
-
+//import statements for images
+import FacultyAdvisor from "../Assets/Images/Faculty/FA.png"
+import NodalOfficer from "../Assets/Images/Faculty/NO.png"
 export default function Faculty() {
     const faculty = [{
         image: "",
@@ -10,14 +12,14 @@ export default function Faculty() {
         number: "+91 0000000000"
     },
     {
-        image: "",
+        image: FacultyAdvisor,
         name: "Dr. Gijoy S",
         role: "Faculty Advisor",
         email: "email@email.com",
         number: "+91 9496330263",
     }, 
     {
-        image: "",
+        image: NodalOfficer,
         name: "Dr. Raju C", 
         role: "Nodal Officer",
         email: "noiedc@cet.ac.in",
