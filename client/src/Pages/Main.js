@@ -3,7 +3,6 @@ import Navbar from "../Components/Navbar";
 import NameLogo from "../Components/NameLogo";
 import FeatureTiles from "../Components/FeatureTiles/FeatureTiles";
 import About from "../Components/About";
-
 import Testim from "../Components/Test/Testim";
 import UpcomingEvents from "../Components/UpcomingEvents";
 import Announcements from "../Components/Announcements";
@@ -12,6 +11,10 @@ import ContactPanel from "../Components/ContactPanel";
 import Footer from "../Components/Socials";
 import Ino from "../Components/InoPoints";
 import FAQSection from "../Components/FAQ";
+import Faculty from "../Components/Faculty";
+import Team from "../Components/Team";
+
+
 function Main() {
     //main bar components to enable code reusability
     const aboutSectionRef = useRef(null);
@@ -61,6 +64,8 @@ function Main() {
         <Achievements sectionRef={achievementsSectionRef} />
         {/* <Testimonials sectionRef={testimonialsSectionRef} /> */}
         <Testim />
+        <Faculty />
+        <Team />
         <FAQSection faqData={faqData} />
         <ContactPanel sectionRef={contactSectionRef} />
         <Footer/>
