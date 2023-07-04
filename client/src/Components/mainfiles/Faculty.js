@@ -1,8 +1,8 @@
 import React from "react";
 import Slider from "./Slider2";
 //import statements for images
-import FacultyAdvisor from "../Assets/Images/Faculty/FA.png"
-import NodalOfficer from "../Assets/Images/Faculty/NO.png"
+import FacultyAdvisor from "../../Assets/Images/Faculty/FA.png"
+import NodalOfficer from "../../Assets/Images/Faculty/NO.png"
 export default function Faculty() {
     const faculty = [{
         image: "",

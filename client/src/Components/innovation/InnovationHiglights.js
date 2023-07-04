@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Highlights1 from "../Assets/Images/highlights1.png";
-import Arrow from "../Assets/Images/arrowvector.png";
+import Highlights1 from "../../Assets/Images/Innovation/highlights.png";
+import Arrow from "../../Assets/Images/Innovation/arrowvector.png";
 
 function InnovationHighlights( {sectionRef}) {
   const items = [

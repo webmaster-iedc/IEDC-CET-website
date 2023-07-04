@@ -1,7 +1,7 @@
 import React from "react";
-import Vision from "../Assets/Images/our_vision.jpg";
-import AboutUs from "../Assets/Images/About.jpeg";
-import Objectives from "../Assets/Images/Objectives.jpg";
+import Vision from "../../Assets/Images/About/our_vision.jpg";
+import AboutUs from "../../Assets/Images/About/About.jpeg";
+import Objectives from "../../Assets/Images/About/Objectives.jpg";
 
 function About({ sectionRef }) {
   const aboutDatas = [
