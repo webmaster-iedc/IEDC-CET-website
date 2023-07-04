@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
-import Navbar from "../Components/Navbar";
-import NameLogo from "../Components/NameLogo";
-import FeatureTiles from "../Components/FeatureTiles/FeatureTiles";
-import About from "../Components/About";
-import Testim from "../Components/Test/Testim";
-import UpcomingEvents from "../Components/UpcomingEvents";
-import Announcements from "../Components/Announcements";
-import Achievements from "../Components/Achievements";
-import ContactPanel from "../Components/ContactPanel";
-import Footer from "../Components/Socials";
-import Ino from "../Components/InoPoints";
-import FAQSection from "../Components/FAQ";
-import Faculty from "../Components/Faculty";
-import Team from "../Components/Team";
+import Navbar from "../Components/mainfiles/Navbar";
+import NameLogo from "../Components/mainfiles/NameLogo";
+import FeatureTiles from "../Components/mainfiles/FeatureTiles";
+import About from "../Components/mainfiles/About";
+import Testim from "../Components/mainfiles/Testim";
+import UpcomingEvents from "../Components/mainfiles/UpcomingEvents";
+import Announcements from "../Components/mainfiles/Announcements";
+import Achievements from "../Components/mainfiles/Achievements";
+import ContactPanel from "../Components/mainfiles/ContactPanel";
+import Footer from "../Components/mainfiles/Socials";
+import Ino from "../Components/mainfiles/InoPoints";
+import FAQSection from "../Components/mainfiles/FAQmain";
+import Faculty from "../Components/mainfiles/Faculty";
+import Team from "../Components/mainfiles/Team";
 
 
 function Main() {
@@ -32,7 +32,7 @@ function Main() {
         { text: "ACHIEVEMENTS", href: "#Achievements",sectionRef:achievementsSectionRef },
         { text: "INO POINTS", href: "#INO",sectionRef:inoSectionRef },
         { text: "TEAM", href: "#Testimonials",sectionRef:testimonialsSectionRef },
-        { text: "CONTACt", href: "#Contacts",sectionRef:contactSectionRef }
+        { text: "CONTACT", href: "#Contacts",sectionRef:contactSectionRef }
       ];
     const faqData=[
         {
@@ -53,7 +53,7 @@ function Main() {
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col gap-16" >
+    <div className = "bg-black min-h-screen w-full flex flex-col gap-12" >
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />

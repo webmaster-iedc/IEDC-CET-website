@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "./Slider";
-import Quickfolio from "../Assets/Images/quickfolio.jpg";
+import Quickfolio from "../../Assets/Images/quickfolio.jpg";
 
 export default function UpcomingEvents( {sectionRef}) {
     const Announcements = [{

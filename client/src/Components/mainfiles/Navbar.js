@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa';
-import NavLogo from "../Assets/Images/IedcNavbarLogo.png";
+import NavLogo from "../../Assets/Images/navbar/IedcNavbarLogo.png";
 
 function Navbar({navbarItems}) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
@@ -18,7 +18,7 @@ function Navbar({navbarItems}) {
         <div className="hidden md:flex md:flex-wrap items-center">
           <img className="h-10 w-10 mx-4" src={NavLogo} alt="Navbar Logo" />
           {navbarItems.map((item, index) => (
-            <a key={index} className="lg:mx-4 mx-2" href={item.href}  onClick={() => scrollToSection(item.sectionRef)}>
+            <a key={index} className="lg:mx-4 mx-2 hover:text-white" href={item.href}  onClick={() => scrollToSection(item.sectionRef)}>
               {item.text}
             </a>
           ))}

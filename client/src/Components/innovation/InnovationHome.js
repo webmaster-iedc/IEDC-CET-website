@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Assets/Images/innovation-logo.png";
+import Logo from "../../Assets/Images/InnovationHome/innovation-logo.png";
 
 function InnovationHome(){
     return(

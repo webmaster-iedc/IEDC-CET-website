@@ -1,7 +1,7 @@
 import React from "react";
-import Vision from "../Assets/Images/innovationvision.png"
-import About from "../Assets/Images/innovationabout.png"
-import Objectives from "../Assets/Images/innovationobjectives.png"
+import Vision from "../../Assets/Images/InnovationAbout/innovationvision.png"
+import About from "../../Assets/Images/InnovationAbout/innovationabout.png"
+import Objectives from "../../Assets/Images/InnovationAbout/innovationobjectives.png"
 
 
 function InnovationAbout( {sectionRef}){

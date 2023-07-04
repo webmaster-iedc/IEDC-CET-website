@@ -1,7 +1,7 @@
 import React from "react";
-import Register from "../Assets/Images/innovationregister.png";
-import Mentorship from "../Assets/Images/innovationmentorship.png";
-import Community from "../Assets/Images/innovationcommunity.png";
+import Register from "../../Assets/Images/InnovationProcess/innovationregister.png";
+import Mentorship from "../../Assets/Images/InnovationProcess/innovationmentorship.png";
+import Community from "../../Assets/Images/InnovationProcess/innovationcommunity.png";
 
 function InnovationProcess() {
   const items = [

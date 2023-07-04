@@ -1,13 +1,13 @@
 import React, {useRef} from "react";
-import Navbar from "../Components/Navbar";
-import InnovationHome from "../Components/InnovationHome";
+import Navbar from "../Components/mainfiles/Navbar";
+import InnovationHome from "../Components/innovation/InnovationHome";
 import Background from "../Assets/Images/innovation-bg-2.jpg";
-import InnovationAbout from "../Components/InnovationAbout";
-import FAQSection from "../Components/FAQ";
-import InnovationProcess from "../Components/InnovationProcess"; 
-import InnovationHighlights from "../Components/InnovationHiglights";
-import InnovationAnnoucements from "../Components/InnovationAnnoucements";
-import InnovationContact from "../Components/InnovationContact";
+import InnovationAbout from "../Components/innovation/InnovationAbout";
+import FAQSection from "../Components/mainfiles/FAQinnovation";
+import InnovationProcess from "../Components/innovation/InnovationProcess"; 
+import InnovationHighlights from "../Components/innovation/InnovationHiglights";
+import InnovationAnnoucements from "../Components/innovation/InnovationAnnoucements";
+import InnovationContact from "../Components/innovation/InnovationContact";
 function Innovation()
 {
 
