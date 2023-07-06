@@ -28,9 +28,13 @@ function gallery() {
         <div className="items-center text-center mx-5 mt-5 mb-36">
             <h1 className="text-white text-5xl font-extrabold m-11">Gallery</h1>
 
-            <div className="grid gap-0 grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[1048px] overflow-hidden m-auto ">
+            <div className="grid gap-0 grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden m-auto max-w-[1128px] p-8">
                 {
-                    imageGallery.map((index) => <div className="overflow-hidden max-w-[349.35px]"><img className="h-[200px] w-[349.33px] hover:scale-125 duration-500" src={index.src} title={index.title} /></div>)
+                    imageGallery.map((index) => 
+                    <div className="group relative overflow-hidden w-full">
+                        <p className="bg-white opacity-0 text-xs font-medium group-hover:opacity-80 absolute z-10 bottom-0 left-0 p-2 w-full transition-opacity ease-[cubic-bezier(.075,.82,.165,1)] duration-500">{index.title}</p>
+                        <img className="object-cover w-full h-48 hover:scale-125 ease-[cubic-bezier(.075,.82,.165,1)] duration-500 m-0" src={index.src} title={index.title} />
+                    </div>)
                 }
             </div>
         </div>

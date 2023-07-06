@@ -21,8 +21,8 @@ export default function UpcomingEvents( {sectionRef}) {
     ];
 
     return ( <
-        div  ref={sectionRef} className = "w-3/4 text-center  space-y-5 self-center mt-4 mb-2 " >
-        <h className = "mb-2 text-4xl font-bold text-white" > Announcements </h> <
+        div  ref={sectionRef} className = "w-3/4 border-t-[1px] border-t-gray-800 pt-12 text-center space-y-5 self-center mt-4 mb-2 " >
+        <h className = "mb-12 block text-3xl min-[400px]:text-4xl font-bold text-white" > Announcements </h> <
         Slider data = { Announcements }/>
         </ div >
     );

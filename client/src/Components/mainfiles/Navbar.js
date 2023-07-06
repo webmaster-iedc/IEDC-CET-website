@@ -14,8 +14,8 @@ function Navbar({navbarItems}) {
   };
   return (
     <nav className="lg:text-lg text-md mb-6 mt-4 text-gray-500 font-medium flex flex-wrap w-full items-center">
-      <div className="items-center">
-        <div className="hidden md:flex md:flex-wrap justify-center items-center">
+      <div className="items-center w-full">
+        <div className="hidden w-full md:flex md:flex-wrap justify-center items-center">
           <img className="h-10 w-10 mx-4" src={NavLogo} alt="Navbar Logo" />
           {navbarItems.map((item, index) => (
             <a key={index} className="lg:mx-4 mx-2  hover:text-white" href={item.href}  onClick={() => scrollToSection(item.sectionRef)}>

@@ -57,13 +57,13 @@ const Testim = () => {
 
   return (
     <>
-    <h2 class="mb-2 text-white text-center text-4xl font-bold">Testimonials</h2>
+    <h2 class="w-3/4 self-center border-t-[1px] border-t-gray-800 pt-12 mb-2 text-white text-center text-4xl font-bold">Testimonials</h2>
     <div className="testimonials-div">
       
       <button className="testimonial-btn" onClick={goPrev}>
         &#x21e6;
       </button>
-      <div className="shown-testimonial border-solid border-zinc-800 border-l-[15px] bg-zinc-800 rounded-lg" id="shown-testimonial">
+      <div className="shown-testimonial break-words border-solid border-zinc-800 border-l-[15px] bg-zinc-800 rounded-lg" id="shown-testimonial">
         {testimTiles}
       </div>
       <button className="testimonial-btn" onClick={goNext}>

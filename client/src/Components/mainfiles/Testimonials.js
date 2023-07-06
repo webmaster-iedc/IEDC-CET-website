@@ -30,7 +30,7 @@ const testimonials = [
   return(
         <div class="p-4 w-3/4 l self-center text-white">
   <section class="mb-32 text-center">
-    <h2 class="mb-12 pb-4 text-center text-3xl font-bold">Testimonials</h2>
+    <h2 class="mb-12 pb-4 text-center text-3xl break-words font-bold">Testimonials</h2>
 
     <div class="grid gap-6 lg:grid-cols-3 md:flex-col xl:gap-x-12">
       {testimonials.map((testimonial, index) => (
