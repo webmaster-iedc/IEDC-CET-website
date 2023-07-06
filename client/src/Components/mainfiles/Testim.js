@@ -63,7 +63,7 @@ const Testim = () => {
       <button className="testimonial-btn" onClick={goPrev}>
         &#x21e6;
       </button>
-      <div className="shown-testimonial bg-zinc-800 rounded-lg" id="shown-testimonial">
+      <div className="shown-testimonial border-solid border-zinc-800 border-l-[15px] bg-zinc-800 rounded-lg" id="shown-testimonial">
         {testimTiles}
       </div>
       <button className="testimonial-btn" onClick={goNext}>

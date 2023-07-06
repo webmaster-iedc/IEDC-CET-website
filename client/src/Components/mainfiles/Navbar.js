@@ -13,12 +13,12 @@ function Navbar({navbarItems}) {
     }
   };
   return (
-    <nav className="lg:text-lg text-md mb-6 mt-4 text-gray-500 flex flex-wrap w-full justify-center items-center">
+    <nav className="lg:text-lg text-md mb-6 mt-4 text-gray-500 font-medium flex flex-wrap w-full items-center">
       <div className="items-center">
-        <div className="hidden md:flex md:flex-wrap items-center">
+        <div className="hidden md:flex md:flex-wrap justify-center items-center">
           <img className="h-10 w-10 mx-4" src={NavLogo} alt="Navbar Logo" />
           {navbarItems.map((item, index) => (
-            <a key={index} className="lg:mx-4 mx-2 hover:text-white" href={item.href}  onClick={() => scrollToSection(item.sectionRef)}>
+            <a key={index} className="lg:mx-4 mx-2  hover:text-white" href={item.href}  onClick={() => scrollToSection(item.sectionRef)}>
               {item.text}
             </a>
           ))}

@@ -14,7 +14,7 @@ function InnovationContact( {sectionRef}) {
                         <div>
                             <AiOutlineMail size={45} className="text-[#dee2e4]" />
                         </div>
-                        <div className="text-[#9BA9B3] underline font-semibold text-2xl">
+                        <div className="text-[#9BA9B3] underline break-words font-semibold text-2xl">
                             ceoiedc@cet.ac.in
                         </div>
                     </div>
