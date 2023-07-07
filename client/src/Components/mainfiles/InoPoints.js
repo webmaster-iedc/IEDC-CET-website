@@ -5,8 +5,8 @@ import iedcvideo from "../../Assets/Videos/INO.mp4";
 function Ino( {sectionRef}) {
   return (
     
-        <div  ref={sectionRef} className = "w-3/4 text-center  space-y-5 self-center mt-4 mb-2 " >
-        <h className = "mb-2 text-4xl font-bold text-white" > INO Points  </h>
+        <div  ref={sectionRef} className = "w-3/4 border-t-[1px] border-t-gray-800 pt-12 text-center  space-y-5 self-center mt-4 mb-2 " >
+        <h className = "mb-12 block text-4xl font-bold text-white" > INO Points  </h>
        
       <div className="flex lg:flex-row items-center flex-col gap-16 h-full">
         <div className="  my-auto">
