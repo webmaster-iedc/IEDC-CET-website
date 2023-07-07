@@ -83,7 +83,7 @@ function FeatureTiles()
               <div key={index} className="w-full md:w-1/2 xl:w-1/3 p-8 text-xl text-center">
                 <div className="flex flex-col items-center p-8 space-y-3 text-xl text-center">
                   <span className="inline-block text-blue-500 dark:text-blue-400">{feature.icon}</span>
-                  <h1 className="text-2xl font-semibold text-gray-700 capitalize dark:text-white">{feature.title}</h1>
+                  <h1 className="text-2xl font-semibold text-gray-700 capitalize break-words dark:text-white">{feature.title}</h1>
                   <p className="text-gray-500 dark:text-gray-300">{feature.description}</p>
                 </div>
               </div>
