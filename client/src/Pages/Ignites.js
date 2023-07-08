@@ -4,6 +4,7 @@ import NameLogo from "../Components/ignites/IgnitesNameLogo";
 import ContactPanel from "../Components/ignites/ContactPanel";
 import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
+import Footer from "../Components/mainfiles/Socials";
 
 function Ignites()
 {
@@ -28,7 +29,7 @@ function Ignites()
         <IgnitesAbout />
         <IgnitesGallery />
         <ContactPanel />
-        
+        <Footer />
         
     </div>
      );
