@@ -23,7 +23,7 @@ function Navbar({navbarItems}) {
             </a>
           ))}
         </div>
-        <div className="md:hidden flex">
+        <div className="md:hidden items-center justify-center flex">
           <img className="h-10 w-10 mx-4" src={NavLogo} alt="Navbar Logo" />
           <button onClick={toggleDropDown}>
             <FaBars className="text-2xl" />
@@ -35,7 +35,7 @@ function Navbar({navbarItems}) {
                 <a key={index} className="mx-4 my-2 text-gray-500  hover:text-white" href={item.href} onClick={toggleDropDown}>
                   {item.text}
                 </a>
-
+  
               ))}
             </div>
           )}
