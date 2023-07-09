@@ -26,20 +26,20 @@ function Innovation()
       ];
       const faqData=[
         {
-          question: 'What is Innovation on wheels ?',
-          answer: 'Answer 1',
+          question: 'What is IoW?',
+          answer: 'It is an initiative by IEDC CET aimed at creating awareness and teaching the latest technological trends across various private or government institutions.',
         },
         {
-          question: 'How to register ?',
-          answer: 'Answer 2',
+          question: 'How do I register ?',
+          answer: 'Individuals interested in participating can register by filling out a G-form that will be circulated to their respective colleges.',
         },
         {
           question: 'What are the advantages in joining the program ?',
-          answer: 'Answer 3',
+          answer: 'Participants will gain insightful knowledge about the latest technological trends required in various industries.',
         },
         {
-          question: 'How the community works ?',
-          answer: 'Answer 4',
+          question: 'How does the community work?',
+          answer: 'The IoW program is primarily led by CET students who possess specialized skills in various new technological trends.',
         },
       ];
     return ( 

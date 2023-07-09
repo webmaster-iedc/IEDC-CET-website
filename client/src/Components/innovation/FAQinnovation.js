@@ -18,7 +18,7 @@ const FAQSection = ({faqData}, {sectionRef}) => {
         <h2 class="text-center text-5xl font-bold">FAQs</h2>
         <hr className="mt-2 border-t-2 w-36 mx-auto pb-20  border-red-700" />
           {faqData.map((faq, index) => (
-            <div key={index} className="py-3 px-7 bg-[#0D0F10] text-white rounded-md shadow-md ">
+            <div key={index} className="py-3 px-7 bg-[#0D0F10] text-white rounded-md shadow-md">
               <div className="flex justify-between items-center">
                 <div className="flex-1">
                   <button
