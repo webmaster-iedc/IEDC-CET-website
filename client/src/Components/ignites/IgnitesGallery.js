@@ -25,7 +25,7 @@ function gallery() {
         {src:pic9, title:'Ignites 10'},
     ];
     return(
-        <div className="items-center text-center mx-5 mt-5 mb-36">
+        <div className="items-center text-center mx-5 mt-5">
             <h1 className="text-white text-5xl font-extrabold m-11">Gallery</h1>
 
             <div className="grid gap-0 grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-hidden m-auto max-w-[1128px] p-8">

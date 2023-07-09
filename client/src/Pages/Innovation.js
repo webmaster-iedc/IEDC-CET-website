@@ -3,7 +3,7 @@ import Navbar from "../Components/mainfiles/Navbar";
 import InnovationHome from "../Components/innovation/InnovationHome";
 import Background from "../Assets/Images/innovation-bg-2.jpg";
 import InnovationAbout from "../Components/innovation/InnovationAbout";
-import FAQSection from "../Components/mainfiles/FAQinnovation";
+import FAQSection from "../Components/innovation/FAQinnovation";
 import InnovationProcess from "../Components/innovation/InnovationProcess"; 
 import InnovationHighlights from "../Components/innovation/InnovationHiglights";
 import InnovationAnnoucements from "../Components/innovation/InnovationAnnoucements";
