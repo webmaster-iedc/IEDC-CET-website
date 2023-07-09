@@ -14,6 +14,8 @@ import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
 
+import {RiArrowDropDownLine} from 'react-icons/ri'
+
 
 function Main() {
     //main bar components to enable code reusability
@@ -25,7 +27,15 @@ function Main() {
     const testimonialsSectionRef = useRef(null);
     const contactSectionRef = useRef(null);
     const  navbarItems=  [
-        { text: "INNOVATION", href: "/innovation" },
+        { text: 
+          (<div className="relative group hover:text-gray-500">
+            <h5 className="group-hover:text-gray-300 flex items-center transition-all">ALUMNI EVENTS <span className="group-hover:rotate-180 transition-all"><RiArrowDropDownLine size={30} /></span></h5>
+            <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity px-4 border-l-2 border-gray-500">
+              <a className="hover:text-gray-300 block" href="/innovation">Innovation</a>
+              <a className="hover:text-gray-300 block" href="/ignites">IgnitES</a>
+            </div>
+          </div>)
+          , href: "" },
         { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
         { text: "EVENTS", href: "#Events",sectionRef:upcomingEventsSectionRef },
         { text: "ANNOUNCEMENTS", href: "#Annoucements",sectionRef:announcementsSectionRef },

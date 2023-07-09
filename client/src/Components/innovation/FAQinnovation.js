@@ -14,11 +14,11 @@ const FAQSection = ({faqData}, {sectionRef}) => {
   };
 
   return (
-    <div  ref={sectionRef} className="mb-4 mt-20 space-y-3 text-white md:w-2/3 w-3/4 self-center">
-        <h2 class="text-center text-3xl font-bold">FAQs</h2>
-        <hr className="border-t-2 w-12 mx-auto mb-36 border-red-700" />
+    <div  ref={sectionRef} className="mt-24 space-y-3 text-white md:w-2/3 w-3/4 self-center">
+        <h2 class="text-center text-5xl font-bold">FAQs</h2>
+        <hr className="mt-2 border-t-2 w-36 mx-auto pb-20  border-red-700" />
           {faqData.map((faq, index) => (
-            <div key={index} className="p-2 bg-[#334155] text-white rounded-md shadow-md ">
+            <div key={index} className="py-3 px-7 bg-[#0D0F10] text-white rounded-md shadow-md">
               <div className="flex justify-between items-center">
                 <div className="flex-1">
                   <button
@@ -30,7 +30,7 @@ const FAQSection = ({faqData}, {sectionRef}) => {
                 </div>
                 <div>
                   <button
-                    className=""
+                    className="flex align-center"
                     onClick={() => handleQuestionClick(index)}
                   >
                     {expandedQuestion === index ? <svg width="20" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
