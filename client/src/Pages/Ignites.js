@@ -16,6 +16,7 @@ function Ignites()
       const faqsSectionRef = useRef(null);
       const contactSectionRef = useRef(null);
       const navbarItems = [
+        { text: "HOME", href: "/" },
         { text: "IGNITES", href: "/ignites" },
         { text: "ABOUT", href: "/ignites/#About", sectionRef: aboutSectionRef },
         { text: "EVENTS", href: "/ignites/#Events", sectionRef: announcementsSectionRef },
