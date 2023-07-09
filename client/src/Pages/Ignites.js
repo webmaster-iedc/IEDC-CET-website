@@ -4,6 +4,7 @@ import NameLogo from "../Components/ignites/IgnitesNameLogo";
 import ContactPanel from "../Components/ignites/ContactPanel";
 import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
+import Testimonials from "../Components/ignites/IgnitesTestim";
 import Footer from "../Components/mainfiles/Socials";
 
 function Ignites()
@@ -15,6 +16,7 @@ function Ignites()
       const faqsSectionRef = useRef(null);
       const contactSectionRef = useRef(null);
       const navbarItems = [
+        { text: "HOME", href: "/" },
         { text: "IGNITES", href: "/ignites" },
         { text: "ABOUT", href: "/ignites/#About", sectionRef: aboutSectionRef },
         { text: "EVENTS", href: "/ignites/#Events", sectionRef: announcementsSectionRef },
@@ -28,6 +30,7 @@ function Ignites()
         <NameLogo />
         <IgnitesAbout />
         <IgnitesGallery />
+        <Testimonials />
         <ContactPanel />
         <Footer />
         
