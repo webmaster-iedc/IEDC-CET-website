@@ -30,7 +30,7 @@ function Main() {
         { text: 
           (<div className="relative group hover:text-gray-500">
             <h5 className="group-hover:text-gray-300 flex items-center transition-all">ALUMNI EVENTS <span className="group-hover:rotate-180 transition-all"><RiArrowDropDownLine size={30} /></span></h5>
-            <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity px-4 border-l-2 border-gray-500">
+            <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
               <a className="hover:text-gray-300 block" href="/innovation">Innovation</a>
               <a className="hover:text-gray-300 block" href="/ignites">IgnitES</a>
             </div>
