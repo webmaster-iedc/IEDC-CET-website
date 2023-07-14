@@ -25,6 +25,7 @@ export default function Timeline(){
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="2010 - 2011"
             iconStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
             //icon={<WorkIcon />}
@@ -36,6 +37,7 @@ export default function Timeline(){
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="2008 - 2010"
             iconStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
             //icon={<WorkIcon />}
@@ -47,6 +49,7 @@ export default function Timeline(){
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="2006 - 2008"
             iconStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
             //icon={<WorkIcon />}
@@ -58,6 +61,7 @@ export default function Timeline(){
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
             contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="April 2013"
             iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
             //icon={<SchoolIcon />}
@@ -69,6 +73,7 @@ export default function Timeline(){
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
             contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="November 2012"
             iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
             //icon={<SchoolIcon />}
@@ -80,6 +85,7 @@ export default function Timeline(){
         <VerticalTimelineElement
             className="vertical-timeline-element--education"
             contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="2002 - 2006"
             iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
             //icon={<SchoolIcon />}
