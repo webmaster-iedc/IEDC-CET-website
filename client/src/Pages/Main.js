@@ -13,8 +13,9 @@ import Ino from "../Components/mainfiles/InoPoints";
 import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
+import Timeline from "../Components/mainfiles/Timeline";
 
-import {RiArrowDropDownLine} from 'react-icons/ri'
+import {RiArrowDropDownLine} from 'react-icons/ri';
 
 
 function Main() {
