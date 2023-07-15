@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "react-chrono": "^2.2.2",
+    "react-vertical-timeline-component": "^3.6.0"
+  }
+}
