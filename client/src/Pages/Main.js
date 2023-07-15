@@ -14,10 +14,9 @@ import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
 import {RiArrowDropDownLine} from 'react-icons/ri';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Timeline from "../Components/mainfiles/Timeline";
-
+import Newsletter from "../Components/mainfiles/Newsletter";
 
 function Main() {
     //main bar components to enable code reusability
@@ -81,6 +80,7 @@ function Main() {
         <Team />
         <FAQSection faqData={faqData} />
         <ContactPanel sectionRef={contactSectionRef} />
+        <Newsletter />
         <Footer/>
     </div>
     );

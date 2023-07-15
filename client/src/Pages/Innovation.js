@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import Navbar from "../Components/mainfiles/Navbar";
 import InnovationHome from "../Components/innovation/InnovationHome";
-import Background from "../Assets/Images/innovation-bg-2.jpg";
+import Background from "../Assets/Images/innovation-bg-1.jpg";
 import InnovationAbout from "../Components/innovation/InnovationAbout";
 import FAQSection from "../Components/innovation/FAQinnovation";
 import InnovationProcess from "../Components/innovation/InnovationProcess"; 
@@ -43,7 +43,7 @@ function Innovation()
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
+    <div className = "bg-cover bg-center min-h-screen w-full flex flex-col" style={{ backgroundImage: `url(${Background})` }} >
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
         <InnovationAbout  sectionRef={aboutSectionRef}/>
