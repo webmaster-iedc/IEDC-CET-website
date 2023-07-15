@@ -13,7 +13,7 @@ function Ignites()
       const aboutSectionRef = useRef(null);
       const announcementsSectionRef = useRef(null); 
       const highlightsSectionRef = useRef(null);
-      const faqsSectionRef = useRef(null);
+      
       const contactSectionRef = useRef(null);
       const navbarItems = [
         { text: "HOME", href: "/" },

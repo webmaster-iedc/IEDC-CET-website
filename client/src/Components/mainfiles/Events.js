@@ -23,7 +23,7 @@ const Events = () => {
                 {
                     listofevents.map((event_,index) =>
                     <div key={index} className='border-solid items-center flex flex-col border-[1px] border-[#e5e7eb] pb-5'>
-                        <img src={event_.image} width={382.4} height={354} />
+                        <img alt="" src={event_.image} width={382.4} height={354} />
                         <h3 className='text-white text-2xl font-semibold text-center m-3'>{event_.name}</h3>
                         <p className='text-[#9ca3af] text-center m-3'>{event_.date}</p>
                         <a href={event_.src} className='text-[#ffffff] text-xl border-solid mx-auto rounded-md bg-blue-800 px-3 py-2 '>Explore &#8594;</a> 
