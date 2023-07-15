@@ -17,12 +17,12 @@ const Events = () => {
         }
     ]
     return (
-        <div className='m-auto'>
+        <div className='w-2/3 self-center'>
             <h1 className='text-4xl text-center text-white font-semibold m-11'>Events</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10 justify-center'>
                 {
-                    listofevents.map((event_) =>
-                    <div className='border-solid items-center flex flex-col border-[1px] border-[#e5e7eb] pb-5'>
+                    listofevents.map((event_,index) =>
+                    <div key={index} className='border-solid items-center flex flex-col border-[1px] border-[#e5e7eb] pb-5'>
                         <img src={event_.image} width={382.4} height={354} />
                         <h3 className='text-white text-2xl font-semibold text-center m-3'>{event_.name}</h3>
                         <p className='text-[#9ca3af] text-center m-3'>{event_.date}</p>
