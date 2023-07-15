@@ -2,9 +2,9 @@ import React from "react";
 import "./testimstyles.css";
 import TestimTile from "./TestimTile";
 
-import Athira from '../../Assets/Images/Testimonials/Athira.jpg'
-import Ann from '../../Assets/Images/Testimonials/Ann.jpg'
-import Sreekanth from '../../Assets/Images/Testimonials/Sreekanth.jpg'
+import Athira from "../../Assets/Images/Testimonials/Athira.jpg";
+import Ann from "../../Assets/Images/Testimonials/Ann.jpg";
+import Sreekanth from "../../Assets/Images/Testimonials/Sreekanth.jpg";
 
 const Testim = () => {
   const testimonials = [
@@ -39,7 +39,7 @@ const Testim = () => {
     const isEnd = div.scrollLeft === 0;
     div.scrollLeft = isEnd
       ? div.firstChild.scrollWidth * testimonials.length
-      : div.scrollLeft - div.firstChild.scrollWidth;
+      : div.scrollLeft - div.firstChild.scrollWidth - 25;
   };
 
   const goNext = (e) => {
@@ -47,7 +47,9 @@ const Testim = () => {
     const isEnd =
       div.scrollLeft >=
       div.firstChild.scrollWidth * (testimonials.length - 1.5);
-    div.scrollLeft = isEnd ? 0 : div.scrollLeft + div.firstChild.scrollWidth;
+    div.scrollLeft = isEnd
+      ? 0
+      : div.scrollLeft + div.firstChild.scrollWidth + 25;
   };
 
   const testimTiles = [];
@@ -57,19 +59,20 @@ const Testim = () => {
 
   return (
     <>
-    <h2 class="w-3/4 self-center border-t-[1px] border-t-gray-800 pt-12 mb-2 text-white text-center text-4xl font-bold">Testimonials</h2>
-    <div className="testimonials-div">
-      
-      <button className="testimonial-btn" onClick={goPrev}>
-        &#x21e6;
-      </button>
-      <div className="shown-testimonial break-words border-solid border-zinc-800 border-l-[15px] bg-zinc-800 rounded-lg" id="shown-testimonial">
-        {testimTiles}
+      <h2 class="w-3/4 self-center border-t-[1px] border-t-gray-800 pt-12 text-white text-center text-4xl font-bold">
+        Testimonials
+      </h2>
+      <div className="testimonials-div">
+        <button className="testimonial-btn" onClick={goPrev}>
+          &#x21e6;
+        </button>
+        <div className="shown-testimonial " id="shown-testimonial">
+          {testimTiles}
+        </div>
+        <button className="testimonial-btn" onClick={goNext}>
+          &#x21e8;
+        </button>
       </div>
-      <button className="testimonial-btn" onClick={goNext}>
-        &#x21e8;
-      </button>
-    </div>
     </>
   );
 };
