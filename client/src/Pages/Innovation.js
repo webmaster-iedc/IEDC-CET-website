@@ -2,6 +2,7 @@ import React, {useRef} from "react";
 import Navbar from "../Components/mainfiles/Navbar";
 import InnovationHome from "../Components/innovation/InnovationHome";
 import Background from "../Assets/Images/innovation-bg-2.jpg";
+import Background2 from "../Assets/Images/InnovationHome/innovation-bg-3.png"
 import InnovationAbout from "../Components/innovation/InnovationAbout";
 import FAQSection from "../Components/innovation/FAQinnovation";
 import InnovationProcess from "../Components/innovation/InnovationProcess"; 
@@ -43,15 +44,19 @@ function Innovation()
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
-        <Navbar navbarItems={navbarItems} />
-        <InnovationHome />
-        <InnovationAbout  sectionRef={aboutSectionRef}/>
-        <InnovationProcess/>,
-        <InnovationAnnoucements sectionRef={announcementsSectionRef}/>
-        <InnovationHighlights sectionRef={highlightsSectionRef}/>
-        <FAQSection faqData={faqData } sectionRef={faqsSectionRef}/>
-        <InnovationContact sectionRef={contactSectionRef} />
+    <div className = "bg-[#15191D] relative min-h-screen w-full flex flex-col">
+        <img src={Background} className="absolute -top-[940px] z-0 opacity-30" alt="background" />
+        <img src={Background2} className="absolute bottom-56 z-10" alt="background" />
+        <div className="z-20 min-h-screen w-full flex flex-col">
+          <Navbar navbarItems={navbarItems} />
+          <InnovationHome />
+          <InnovationAbout  sectionRef={aboutSectionRef}/>
+          <InnovationProcess/>,
+          <InnovationAnnoucements sectionRef={announcementsSectionRef}/>
+          <InnovationHighlights sectionRef={highlightsSectionRef}/>
+          <FAQSection faqData={faqData } sectionRef={faqsSectionRef}/>
+          <InnovationContact sectionRef={contactSectionRef} />
+        </div>
     </div>
      );
 }

@@ -17,7 +17,7 @@ import {RiArrowDropDownLine} from 'react-icons/ri';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Timeline from "../Components/mainfiles/Timeline";
-
+import Events from "../Components/mainfiles/Events";
 
 function Main() {
     //main bar components to enable code reusability
@@ -65,13 +65,14 @@ function Main() {
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col gap-12" >
+    <div className = "bg-[#151719] min-h-screen w-full flex flex-col gap-12" >
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />
         <About sectionRef={aboutSectionRef} />
         <Timeline />
         <Ino sectionRef={inoSectionRef}/>
+        <Events />
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <Announcements sectionRef={announcementsSectionRef} />
         <Achievements sectionRef={achievementsSectionRef} />
