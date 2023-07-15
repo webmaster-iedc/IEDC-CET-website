@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ExcelJS from "exceljs";
+// import XLSX from 'sheetjs';
 const File = "newsletter_subscriptions.xlsx"
 
 function Newsletter() {
@@ -61,20 +62,24 @@ function Newsletter() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     // Load the existing workbook
-    const workbook = new ExcelJS.Workbook();
+    // const workbook = new ExcelJS.Workbook();
 		
-    await workbook.xlsx.readFile(File);
+    // await workbook.xlsx.readFile("newsletter_subscriptions.xlsx");
 		
-		console.log("in func")
-    // Get the first worksheet
-    const worksheet = workbook.getWorksheet(1);
+		// console.log("in func")
+    // // Get the first worksheet
+    // const worksheet = workbook.getWorksheet("subscriptions");
 
-    // Add the email to the worksheet
-    worksheet.addRow([email]);
+    // // Add the email to the worksheet
+    // worksheet.addRow([email]);
 
-    // Save the workbook with the updated email
-    await workbook.xlsx.writeFile(File);
-    
+    // // Save the workbook with the updated email
+    // await workbook.xlsx.writeFile(File);
+    // const workbook = XLSX.readFile('path/to/file.xlsx');
+		// const worksheet = workbook.Sheets['Sheet1'];  // Assuming you want to read the first sheet
+		// const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+		// console.log(jsonData);
+
     console.log('Email added to the Excel file.');
   };
 	return (
