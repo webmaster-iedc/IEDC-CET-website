@@ -16,7 +16,6 @@ import Team from "../Components/mainfiles/Team";
 import {RiArrowDropDownLine} from 'react-icons/ri';
 
 import 'react-vertical-timeline-component/style.min.css';
-import Timeline from "../Components/mainfiles/Timeline";
 import Events from "../Components/mainfiles/Events";
 
 function Main() {
@@ -70,7 +69,7 @@ function Main() {
         <NameLogo />
         <FeatureTiles />
         <About sectionRef={aboutSectionRef} />
-        <Timeline />
+        
         <Ino sectionRef={inoSectionRef}/>
         <Events />
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
