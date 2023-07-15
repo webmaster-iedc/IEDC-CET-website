@@ -14,7 +14,7 @@ import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
 import {RiArrowDropDownLine} from 'react-icons/ri';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+
 import 'react-vertical-timeline-component/style.min.css';
 import Timeline from "../Components/mainfiles/Timeline";
 import Events from "../Components/mainfiles/Events";
