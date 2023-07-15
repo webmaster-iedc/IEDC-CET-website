@@ -1,13 +1,13 @@
 import React, {useRef} from "react";
 import Navbar from "../Components/mainfiles/Navbar";
-import NameLogo from "../Components/ignites/IgnitesNameLogo";
+import InnovationHome from "../Components/campusAmbassador/caHome";
 import ContactPanel from "../Components/ignites/ContactPanel";
 import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
-import Testim from "../Components/mainfiles/Testim";
+import Testimonials from "../Components/ignites/IgnitesTestim";
 import Footer from "../Components/mainfiles/Socials";
 
-function Ignites()
+function CampusAmbassador()
 {
 
       const aboutSectionRef = useRef(null);
@@ -17,7 +17,7 @@ function Ignites()
       const contactSectionRef = useRef(null);
       const navbarItems = [
         { text: "HOME", href: "/" },
-        { text: "IGNITES", href: "/ignites" },
+        
         { text: "ABOUT", href: "/ignites/#About", sectionRef: aboutSectionRef },
         { text: "EVENTS", href: "/ignites/#Events", sectionRef: announcementsSectionRef },
         { text: "GALLERY", href: "/ignites/#Gallery", sectionRef: highlightsSectionRef },
@@ -27,15 +27,15 @@ function Ignites()
     return ( 
     <div className = "bg-black min-h-screen w-full flex flex-col" >
         <Navbar navbarItems={navbarItems} />
-        <NameLogo />
+        <InnovationHome />
         <IgnitesAbout />
-        <IgnitesGallery />
-        <Testim />
+        
+        <Testimonials />
         <ContactPanel />
-        <Footer />
+        
         
     </div>
      );
 }
  
-export default Ignites;
+export default CampusAmbassador;

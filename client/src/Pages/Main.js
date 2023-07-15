@@ -70,7 +70,7 @@ function Main() {
         <NameLogo />
         <FeatureTiles />
         <About sectionRef={aboutSectionRef} />
-        <Timeline />
+        
         <Ino sectionRef={inoSectionRef}/>
         <Events />
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
