@@ -63,7 +63,7 @@ function Main() {
         },
       ];
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col gap-12" >
+    <div className = "bg-[#151719] min-h-screen w-full flex flex-col gap-12" >
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />
