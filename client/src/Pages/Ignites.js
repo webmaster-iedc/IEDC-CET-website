@@ -6,10 +6,10 @@ import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
 import Testim from "../Components/mainfiles/Testim";
 import Footer from "../Components/mainfiles/Socials";
+import Timeline from "../Components/ignites/Timeline"
 
 function Ignites()
 {
-
       const aboutSectionRef = useRef(null);
       const announcementsSectionRef = useRef(null); 
       const highlightsSectionRef = useRef(null);
@@ -29,6 +29,7 @@ function Ignites()
         <Navbar navbarItems={navbarItems} />
         <NameLogo />
         <IgnitesAbout />
+        <Timeline/>
         <IgnitesGallery />
         <Testim />
         <ContactPanel />
