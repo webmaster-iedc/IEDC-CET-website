@@ -13,9 +13,11 @@ import Ino from "../Components/mainfiles/InoPoints";
 import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
-
-import {RiArrowDropDownLine} from 'react-icons/ri'
-
+import {RiArrowDropDownLine} from 'react-icons/ri';
+import 'react-vertical-timeline-component/style.min.css';
+import Timeline from "../Components/mainfiles/Timeline";
+import Newsletter from "../Components/mainfiles/Newsletter";
+import Events from "../Components/mainfiles/Events";
 
 function Main() {
     //main bar components to enable code reusability
@@ -68,7 +70,9 @@ function Main() {
         <NameLogo />
         <FeatureTiles />
         <About sectionRef={aboutSectionRef} />
+        
         <Ino sectionRef={inoSectionRef}/>
+        <Events />
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <Announcements sectionRef={announcementsSectionRef} />
         <Achievements sectionRef={achievementsSectionRef} />
@@ -78,6 +82,7 @@ function Main() {
         <Team />
         <FAQSection faqData={faqData} />
         <ContactPanel sectionRef={contactSectionRef} />
+        <Newsletter />
         <Footer/>
     </div>
     );
