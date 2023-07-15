@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import { Pagination, Navigation } from "swiper";
+import { Pagination } from "swiper";
 
 function Slider({data}) {
   
