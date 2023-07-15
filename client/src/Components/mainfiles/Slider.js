@@ -8,8 +8,6 @@ import { Pagination, Navigation } from "swiper";
 
 function Slider({data}) {
   
-  
-  
   const [slidesPerView, setSlidesPerView] = useState(3);
   useEffect(() => {
     const handleResize = () => {
