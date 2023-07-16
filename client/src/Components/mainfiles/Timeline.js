@@ -8,7 +8,7 @@ const timelineElements = [
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-      date: "2010 - 2011",
+      date: "210 - 2011",
       title: "Lorem ipsum dolor sit amet",
       subtitle: "Lorem ipsum",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
