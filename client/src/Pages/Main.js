@@ -17,7 +17,7 @@ import {RiArrowDropDownLine} from 'react-icons/ri';
 import 'react-vertical-timeline-component/style.min.css';
 import Timeline from "../Components/mainfiles/Timeline";
 import Newsletter from "../Components/mainfiles/Newsletter";
-import Events from "../Components/mainfiles/Events";
+//import Events from "../Components/mainfiles/Events";
 
 function Main() {
     //main bar components to enable code reusability
@@ -72,7 +72,7 @@ function Main() {
         <About sectionRef={aboutSectionRef} />
         
         <Ino sectionRef={inoSectionRef}/>
-        <Events />
+        
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <Announcements sectionRef={announcementsSectionRef} />
         <Achievements sectionRef={achievementsSectionRef} />
