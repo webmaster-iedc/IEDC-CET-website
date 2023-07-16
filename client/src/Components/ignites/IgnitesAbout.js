@@ -1,6 +1,6 @@
 import React from "react";
 import Vision from "../../Assets/Images/IgnitesAbout/Inspiration.jpg"
-
+import About from "../../Assets/Images/InnovationAbout/innovationabout.png"
 import Objectives from "../../Assets/Images/IgnitesAbout/IgnitesIdea.png"
 
 

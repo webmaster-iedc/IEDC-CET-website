@@ -44,6 +44,7 @@ export default function Team() {
         email: "cooiedc@cet.ac.in",
         number: "+91 9747104733"
     },
+    ,
     {
         image: CCO,
         name: "Akhil Hayash M", 

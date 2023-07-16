@@ -1,55 +1,103 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-const timelineElements = [
-    {
-      date: "2011 - present",
-      title: "Lorem ipsum dolor sit amet",
-      subtitle: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      date: "210 - 2011",
-      title: "Lorem ipsum dolor sit amet",
-      subtitle: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      date: "2008 - 2010",
-      title: "Lorem ipsum dolor sit amet",
-      subtitle: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-    {
-      date: "2006 - 2008",
-      title: "Lorem ipsum dolor sit amet",
-      subtitle: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    },
-  ];
+// import 'react-vertical-timeline-component/style.min.css';
+
 
 export default function Timeline(){
     return( 
         <div className = "w-3/4 border-t-[1px] border-t-gray-800 pt-12 text-center  space-y-5 self-center mt-4 mb-2 ">
         
-        <VerticalTimeline lineColor={ 'gray' }>
-        
-        {timelineElements.map((element, index) => (
+        <VerticalTimeline lineColor={ 'purple' }>
         <VerticalTimelineElement
-          key={index}
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#5658dd", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  #aaa" }}
-          date={element.date}
-          iconStyle={{ background: "#5658dd", color: "#aaa" }}
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(53, 7, 134)' }}
+            date="2011 - present"
+            iconStyle={{ background: 'rgb(53, 7, 134)', color: '#8f2173' }}
+            //icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">{element.title}</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            {element.subtitle}
-          </h4>
-          <p>{element.description}</p>
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
         </VerticalTimelineElement>
-      ))}
-       
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="2010 - 2011"
+            iconStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            //icon={<WorkIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="2008 - 2010"
+            iconStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            //icon={<WorkIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="2006 - 2008"
+            iconStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            //icon={<WorkIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="April 2013"
+            iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
+            //icon={<SchoolIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="November 2012"
+            iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
+            //icon={<SchoolIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="2002 - 2006"
+            iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
+            //icon={<SchoolIcon />}
+        >
+            <h3 className="vertical-timeline-element-title">Lorem ipsum dolor sit amet</h3>
+            <h4 className="vertical-timeline-element-subtitle">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            iconStyle={{ background: 'rgb(24, 0, 125)', color: '#fff' }}
+            //icon={<StarIcon />}
+        />
         </VerticalTimeline>
     </div>)
 }

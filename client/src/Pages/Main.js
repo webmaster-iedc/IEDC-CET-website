@@ -15,6 +15,7 @@ import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
 import {RiArrowDropDownLine} from 'react-icons/ri';
 import 'react-vertical-timeline-component/style.min.css';
+import Timeline from "../Components/mainfiles/Timeline";
 import Newsletter from "../Components/mainfiles/Newsletter";
 import Events from "../Components/mainfiles/Events";
 
@@ -68,12 +69,14 @@ function Main() {
         <Navbar navbarItems={ navbarItems}/>
         <NameLogo />
         <FeatureTiles />
-        <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <About sectionRef={aboutSectionRef} />
+        
         <Ino sectionRef={inoSectionRef}/>
         <Events />
+        <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <Announcements sectionRef={announcementsSectionRef} />
         <Achievements sectionRef={achievementsSectionRef} />
+        {/* <Testimonials sectionRef={testimonialsSectionRef} /> */}
         <Testim />
         <Faculty />
         <Team />

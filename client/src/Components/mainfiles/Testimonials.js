@@ -28,28 +28,28 @@ const testimonials = [
   ];
   
   return(
-        <div className="p-4 w-3/4 l self-center text-white">
-  <section className="mb-32 text-center">
-    <h2 className="mb-12 pb-4 text-center text-3xl break-words font-bold">Testimonials</h2>
+        <div class="p-4 w-3/4 l self-center text-white">
+  <section class="mb-32 text-center">
+    <h2 class="mb-12 pb-4 text-center text-3xl break-words font-bold">Testimonials</h2>
 
-    <div className="grid gap-6 lg:grid-cols-3 md:flex-col xl:gap-x-12">
+    <div class="grid gap-6 lg:grid-cols-3 md:flex-col xl:gap-x-12">
       {testimonials.map((testimonial, index) => (
-        <div className="mb-6 bg-white lg:mb-0" key={index}>
-          <div className="relative block border rounded-lg ">
-            <div className="flex">
-              <div className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" data-te-ripple-init data-te-ripple-color="light">
-                <img src={testimonial.imageSrc} className="w-full" />
+        <div class="mb-6 bg-white lg:mb-0" key={index}>
+          <div class="relative block border rounded-lg ">
+            <div class="flex">
+              <div class="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" data-te-ripple-init data-te-ripple-color="light">
+                <img src={testimonial.imageSrc} class="w-full" />
                 {testimonial.brochureLink && (
                   <a href={testimonial.brochureLink}>
-                    <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     </div>
                   </a>
                 )}
               </div>
             </div>
-            <div className="p-6">
-              <h5 className="mb-2 text-lg font-bold">{testimonial.name}</h5>
-              <h6 className="mb-4 font-medium text-primary dark:text-primary-400">{testimonial.role}</h6>
+            <div class="p-6">
+              <h5 class="mb-2 text-lg font-bold">{testimonial.name}</h5>
+              <h6 class="mb-4 font-medium text-primary dark:text-primary-400">{testimonial.role}</h6>
               
               <p>{testimonial.description}</p>
             </div>

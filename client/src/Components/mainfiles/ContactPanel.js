@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram} from 'react-icons/fa'
 
 const ContactInfo = (props) => {
     return (

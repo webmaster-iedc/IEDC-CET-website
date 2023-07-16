@@ -57,7 +57,7 @@ const Testim = () => {
 
   return (
     <>
-    <h2 className="w-3/4 self-center pt-12 mb-2 text-white text-center text-4xl font-bold">Testimonials</h2>
+    <h2 class="w-3/4 self-center pt-12 mb-2 text-white text-center text-4xl font-bold">Testimonials</h2>
     <div className="testimonials-div">
       
       <button className="testimonial-btn" onClick={goPrev}>
