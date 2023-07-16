@@ -33,7 +33,7 @@ function gallery() {
                     imageGallery.map((index) => 
                     <div className="group relative overflow-hidden w-full">
                         <p className="bg-white opacity-0 text-xs font-medium group-hover:opacity-80 absolute z-10 bottom-0 left-0 p-2 w-full transition-opacity ease-[cubic-bezier(.075,.82,.165,1)] duration-500">{index.title}</p>
-                        <img alt="" className="object-cover w-full h-48 hover:scale-125 ease-[cubic-bezier(.075,.82,.165,1)] duration-500 m-0" src={index.src} title={index.title} />
+                        <img className="object-cover w-full h-48 hover:scale-125 ease-[cubic-bezier(.075,.82,.165,1)] duration-500 m-0" src={index.src} title={index.title} />
                     </div>)
                 }
             </div>

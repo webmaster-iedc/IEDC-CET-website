@@ -5,22 +5,22 @@ export const SocMediaPanel = () => {
         <div className='pb-3'>
             <ul className='flex text-[#5658DD]'>
                 <li className='px-2'>
-                    <a rel="noreferrer" className="p-2 flex" target="_blank" href="https://www.facebook.com/iedccet/">
+                    <a className="p-2 flex" target="_blank" href="https://www.facebook.com/iedccet/">
                         <FaFacebookF size={20} className='hover:text-[#ACADFF] cursor-pointer mx-auto' />
                     </a>
                 </li>
                 <li className='px-2'>
-                    <a className="p-2 flex" target="_blank" href="https://www.linkedin.com/company/innovation-and-entrepreneurship-development-cell-cet/mycompany/" rel="noopener noreferrer">
+                    <a className="p-2 flex" target="_blank" href="https://www.linkedin.com/company/innovation-and-entrepreneurship-development-cell-cet/mycompany/">
                         <FaLinkedinIn size={20} className='hover:text-[#ACADFF] cursor-pointer mx-auto' />
                     </a>
                 </li>
                 <li className='px-2'>
-                    <a rel="noreferrer" className="p-2 flex" target="_blank" href="https://mobile.twitter.com/iedccet">
+                    <a className="p-2 flex" target="_blank" href="https://mobile.twitter.com/iedccet">
                         <FaTwitter size={20} className='hover:text-[#ACADFF] cursor-pointer mx-auto' />
                     </a>
                 </li>
                 <li className='px-2'>
-                    <a rel="noreferrer" className="p-2 flex" target="_blank" href="https://www.instagram.com/iedc_cet/?hl=en">
+                    <a className="p-2 flex" target="_blank" href="https://www.instagram.com/iedc_cet/?hl=en">
                         <FaInstagram size={20} className='hover:text-[#ACADFF] cursor-pointer mx-auto' />
                     </a>
                 </li>
