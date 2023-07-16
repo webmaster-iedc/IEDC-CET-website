@@ -25,7 +25,7 @@ function Ignites()
       ];
       
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
+    <div className = "bg-[#15191D] min-h-screen w-full flex flex-col" >
         <Navbar navbarItems={navbarItems} />
         <NameLogo />
         <IgnitesAbout />
