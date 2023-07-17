@@ -4,7 +4,7 @@ import InnovationHome from "../Components/campusAmbassador/caHome";
 import ContactPanel from "../Components/ignites/ContactPanel";
 import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
-import Testimonials from "../Components/ignites/IgnitesTestim";
+import Testim from "../Components/mainfiles/Testim";
 import Footer from "../Components/mainfiles/Socials";
 
 function CampusAmbassador()
@@ -29,8 +29,7 @@ function CampusAmbassador()
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
         <IgnitesAbout />
-        
-        <Testimonials />
+        <Testim />
         <ContactPanel />
         
         
