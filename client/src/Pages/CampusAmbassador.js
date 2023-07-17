@@ -2,9 +2,9 @@ import React, {useRef} from "react";
 import Navbar from "../Components/mainfiles/Navbar";
 import InnovationHome from "../Components/campusAmbassador/caHome";
 import ContactPanel from "../Components/ignites/ContactPanel";
-import IgnitesAbout from "../Components/ignites/IgnitesAbout";
+import About from "../Components/campusAmbassador/caAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
-import Testimonials from "../Components/ignites/IgnitesTestim";
+import Testim from "../Components/mainfiles/Testim";
 import Footer from "../Components/mainfiles/Socials";
 
 function CampusAmbassador()
@@ -13,7 +13,7 @@ function CampusAmbassador()
       const aboutSectionRef = useRef(null);
       const announcementsSectionRef = useRef(null); 
       const highlightsSectionRef = useRef(null);
-      const faqsSectionRef = useRef(null);
+      
       const contactSectionRef = useRef(null);
       const navbarItems = [
         { text: "HOME", href: "/" },
@@ -25,12 +25,11 @@ function CampusAmbassador()
       ];
       
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
+    <div className = "bg-[#151719] min-h-screen w-full flex flex-col" >
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
-        <IgnitesAbout />
-        
-        <Testimonials />
+        <About />
+        <Testim />
         <ContactPanel />
         
         

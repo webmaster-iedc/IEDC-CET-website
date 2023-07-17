@@ -1,10 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import { Pagination, Navigation } from "swiper";
+import { Pagination } from "swiper";
 
 const ReadMoreText = ({ children }) => {
   const text = children;
@@ -60,14 +60,14 @@ function Slider({data}) {
         {data.map((event, index) => (
         <SwiperSlide key={index}>
           <div className="h-full max-w-sm border border-gray-200 rounded-lg shadow dark:border-gray-700">
-            <a>
+           
               <img
                 className="rounded-t-lg"
                 src={event.image}
                 alt=""
                 style={{ width: '536px', height: '354px' }}
               />
-            </a>
+            
             <div className="text-center p-5">
               <a href={event.registrationLink}>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

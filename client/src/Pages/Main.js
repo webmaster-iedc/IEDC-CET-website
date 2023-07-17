@@ -15,9 +15,9 @@ import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
 import {RiArrowDropDownLine} from 'react-icons/ri';
 import 'react-vertical-timeline-component/style.min.css';
-import Timeline from "../Components/mainfiles/Timeline";
+
 import Newsletter from "../Components/mainfiles/Newsletter";
-import Events from "../Components/mainfiles/Events";
+//import Events from "../Components/mainfiles/Events";
 
 function Main() {
     //main bar components to enable code reusability
@@ -44,25 +44,30 @@ function Main() {
         { text: "ACHIEVEMENTS", href: "#Achievements",sectionRef:achievementsSectionRef },
         { text: "INO POINTS", href: "#INO",sectionRef:inoSectionRef },
         { text: "TEAM", href: "#Testimonials",sectionRef:testimonialsSectionRef },
-        { text: "CONTACT", href: "#Contacts",sectionRef:contactSectionRef }
+        { text: "CONTACT", href: "#Contacts",sectionRef:contactSectionRef },
+        { text: "CAP", href: "#Contacts",sectionRef:contactSectionRef }
       ];
     const faqData=[
         {
-          question: 'Question a',
-          answer: 'Answer 1',
+          question: 'What support and resources does IEDC CET provide to aspiring entrepreneurs and startups? ',
+          answer: 'We provide assistance to startup founders in the college, by collaborating with Kerala Startup Mission and CET TBI . Also, we regularly conduct workshops, and ideathon challenges to nurture the idea of entrepreneurship in campus. ',
         },
         {
-          question: 'Question 2',
-          answer: 'Answer 2',
+          question: 'How can I get involved with IEDC CET and what opportunities are available for students and entrepreneurs?',
+          answer: 'You could become an official IEDC Execom member by registering when the Execom call happens every academic year. You could also enter as a sub-panel member by registering for it, whose registration starts just some months after the Execom call. IEDC CET shall provide common facilities to students working on start-ups and will provide a platform for the students to pursue entrepreneurial activities',
         },
         {
-          question: 'Question 3',
-          answer: 'Answer 3',
+          question: 'What initiatives and activities does IEDC CET organize throughout the year?',
+          answer: 'IEDC CET is really active in conducting various events, activities and is never short of new initiatives with "Build Club" and "Hireathon" being two of the most recent initiatives. Also, various events like Ideafest, Balm Designathon etc. have been conducted.  We aim to conduct more and more events and competitions fully fledged throughout the year. ',
         },
         {
-          question: 'Question 4',
-          answer: 'Answer 4',
+          question: 'Can any student join IEDC CET, or is it limited to a specific course or department?',
+          answer: 'Any student with a flair for entrepreneurship, irrespective or course or department of study, can join IEDC CET.',
         },
+        {
+          question: 'Are there any membership fees or prerequisites to join IEDC CET?          Can I join IEDC CET if I do not have a business idea yet?',
+          answer: 'No, there are no membership fees or prerequisites to join IEDC CET. Yes, you can join IEDC CET even if you dont have a business idea yet. IEDC CET aims at building entrepreneurial qualities in students from scratch, and bring about a culture of idea-driven development in college.',
+        }
       ];
     return ( 
     <div className = "bg-[#151719] min-h-screen w-full flex flex-col gap-12" >
@@ -72,7 +77,7 @@ function Main() {
         <About sectionRef={aboutSectionRef} />
         
         <Ino sectionRef={inoSectionRef}/>
-        <Events />
+        
         <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
         <Announcements sectionRef={announcementsSectionRef} />
         <Achievements sectionRef={achievementsSectionRef} />
