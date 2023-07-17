@@ -10,7 +10,7 @@ function caHome(){
           </h>
           <p>INITIATIVE BY IEDC CET</p>
           <div className="md:w-1/2 w-3/4 flex flex-col self-center">
-            <button class="w-100 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">REGISTER NOW</button>
+            <button className="w-100 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">REGISTER NOW</button>
             </div>
         </div>
       </div>
