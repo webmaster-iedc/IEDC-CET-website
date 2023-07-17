@@ -29,8 +29,7 @@ function CampusAmbassador()
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
         <About />
-        <Testim />
-        <ContactPanel />
+        
         
         
     </div>
