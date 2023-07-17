@@ -78,8 +78,8 @@ function Newsletter() {
     console.log('Email added to the Excel file.');
   };
 	return (
-    <div className="flex flex-col justify-center items-center gap-7">
-      <h1 className="text-white text-4xl font-bold ">Subscribe to our Newsletter</h1>
+    <div className="sm:p-3  self-center flex flex-col justify-center items-center gap-7">
+      <h1 className="text-center text-white text-4xl font-bold ">Subscribe to our Newsletter</h1>
       <form className="flex justify-center items-center gap-2" onSubmit={handleFormSubmit}>
         <input
           type="email"

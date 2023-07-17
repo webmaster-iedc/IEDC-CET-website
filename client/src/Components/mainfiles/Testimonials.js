@@ -34,7 +34,7 @@ const testimonials = [
 
     <div className="grid gap-6 lg:grid-cols-3 md:flex-col xl:gap-x-12">
       {testimonials.map((testimonial, index) => (
-        <div className="mb-6 bg-white lg:mb-0" key={index}>
+        <div className="mb-6  lg:mb-0" key={index}>
           <div className="relative block border rounded-lg ">
             <div className="flex">
               <div className="relative mx-4 -mt-4 w-full overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]" data-te-ripple-init data-te-ripple-color="light">
