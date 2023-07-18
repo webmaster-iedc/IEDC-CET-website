@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChalkboardTeacher } from '@fortawesome/free-solid-svg-icons';
 import { faGift } from '@fortawesome/free-solid-svg-icons';
@@ -58,14 +59,21 @@ function Features(){
 				content:"Top CA’s will get internship opportunity under E-CELL IITM to become to the CAP leaders for next year."
 			},
     ]
+	
+  
+	
+	  
     return(
 			<div className="text-white my-12">
 				<h2 className="text-center mb-5 text-3xl md:text-4xl font-bold">What's in it for you?</h2>
 				<hr className="w-24 mx-auto" />
 				<div className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-3">
 					{data.map((item,index)=>(
-						<div key={index} className="flex flex-col my-4 p-4 gap-4 w-3/4 md:w-1/4 justify-center items-center">
-							<FontAwesomeIcon className="p-5 border-white border-2 rounded-full  hover:p-7 transition-all duration-300" icon={item.image} />
+						<div
+						
+						key={index} 
+						className="flex flex-col my-4 p-4 gap-4 w-3/4 md:w-1/4 justify-center items-center">
+							<FontAwesomeIcon className="p-5 text-[#5658dd] border-[#5658dd] border-2 rounded-full hover:p-7 transition-all duration-300" icon={item.image} />
 							<h2 className="font-bold">{item.title}</h2>
 							<p className="text-center">{item.content}</p>
 						</div>

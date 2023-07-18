@@ -15,7 +15,7 @@ import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
 import {RiArrowDropDownLine} from 'react-icons/ri';
 import 'react-vertical-timeline-component/style.min.css';
-
+import InnovateX from "../Components/mainfiles/InnovateX";
 import Newsletter from "../Components/mainfiles/Newsletter";
 //import Events from "../Components/mainfiles/Events";
 
@@ -85,6 +85,7 @@ function Main() {
         <Testim />
         <Faculty />
         <Team />
+        <InnovateX/>
         <FAQSection faqData={faqData} />
         <ContactPanel sectionRef={contactSectionRef} />
         <Newsletter />
