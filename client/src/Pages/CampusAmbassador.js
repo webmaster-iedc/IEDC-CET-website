@@ -1,15 +1,11 @@
 import React, {useRef} from "react";
 import Navbar from "../Components/mainfiles/Navbar";
 import InnovationHome from "../Components/campusAmbassador/caHome";
-import ContactPanel from "../Components/ignites/ContactPanel";
 import About from "../Components/campusAmbassador/caAbout";
-import IgnitesGallery from "../Components/ignites/IgnitesGallery";
-import Testim from "../Components/mainfiles/Testim";
-import Footer from "../Components/mainfiles/Socials";
+import Features from "../Components/campusAmbassador/Features";
 
 function CampusAmbassador()
 {
-
       const aboutSectionRef = useRef(null);
       const announcementsSectionRef = useRef(null); 
       const highlightsSectionRef = useRef(null);
@@ -17,7 +13,6 @@ function CampusAmbassador()
       const contactSectionRef = useRef(null);
       const navbarItems = [
         { text: "HOME", href: "/" },
-        
         { text: "ABOUT", href: "/ignites/#About", sectionRef: aboutSectionRef },
         { text: "EVENTS", href: "/ignites/#Events", sectionRef: announcementsSectionRef },
         { text: "GALLERY", href: "/ignites/#Gallery", sectionRef: highlightsSectionRef },
@@ -29,9 +24,7 @@ function CampusAmbassador()
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
         <About />
-        
-        
-        
+        <Features />
     </div>
      );
 }

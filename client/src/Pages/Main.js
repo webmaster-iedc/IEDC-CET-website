@@ -45,7 +45,7 @@ function Main() {
         { text: "INO POINTS", href: "#INO",sectionRef:inoSectionRef },
         { text: "TEAM", href: "#Testimonials",sectionRef:testimonialsSectionRef },
         { text: "CONTACT", href: "#Contacts",sectionRef:contactSectionRef },
-        { text: "CAP", href: "#Contacts",sectionRef:contactSectionRef }
+        { text: "CAP", href: "/cap",sectionRef:contactSectionRef }
       ];
     const faqData=[
         {
