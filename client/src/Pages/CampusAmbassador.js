@@ -20,7 +20,7 @@ function CampusAmbassador()
       ];
       
     return ( 
-    <div className = "bg-[#151719] min-h-screen w-full flex flex-col" >
+    <div className = "space-y-6 bg-[#151719] min-h-screen w-full flex flex-col" >
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
         <About />

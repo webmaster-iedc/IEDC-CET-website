@@ -27,15 +27,15 @@ function About() {
 
   return (
     <div className="mt-10 lg:space-x-4 lg:space-y-0  lg:text-center md:space-y-2 mt-4 flex flex-col lg:flex-row  md:justify-between   w-3/4 self-center text-white">
-        <div className=" p-4 bg-black rounded-md space-y-2   sm:w-full lg:w-1/3">
+        <div className=" p-4 bg-gray-800 rounded-md space-y-2   sm:w-full lg:w-1/3">
             <h className="font-extrabold text-4xl ">About Us</h>
             <p className="text-xl text-gray-400">The Campus Ambassador Program is launched with the aim of developing an entrepreneurship culture in various colleges across the country.It is a Pan-India program for onboarding student ambassadors to not only publicize the events conducted by E-Cell IIT Madras but will also help them learn about entrepreneurship as a whole.</p>
         </div>
-        <div className="p-4 bg-black rounded-md space-y-2   sm:w-full lg:w-1/3">
+        <div className="p-4 bg-gray-800 rounded-md space-y-2   sm:w-full lg:w-1/3">
             <h className="font-extrabold text-4xl ">Aim</h>
             <p className="text-xl text-gray-400">The Campus Ambassador Program is launched with the aim of developing an entrepreneurship culture in various colleges across the country.It is a Pan-India program for onboarding student ambassadors to not only publicize the events conducted by E-Cell IIT Madras but will also help them learn about entrepreneurship as a whole.</p>
         </div>
-        <div className="p-4 bg-black rounded-md space-y-2   sm:w-full lg:w-1/3">
+        <div className="p-4 bg-gray-800 rounded-md space-y-2   sm:w-full lg:w-1/3">
             <h className="font-extrabold text-4xl ">Aim</h>
             <p className="text-xl text-gray-400">The Campus Ambassador Program is launched with the aim of developing an entrepreneurship culture in various colleges across the country.It is a Pan-India program for onboarding student ambassadors to not only publicize the events conducted by E-Cell IIT Madras but will also help them learn about entrepreneurship as a whole.</p>
         </div>
