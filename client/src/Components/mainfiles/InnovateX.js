@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function InnovateX() {
   const [formData, setFormData] = useState({
@@ -27,7 +28,8 @@ function InnovateX() {
     },
     {
       id: "dataAnalysis",
-      label: "Data Analysis and Visualization (Numpy, Pandas, Seaborn, MatPlotLib)",
+      label:
+        "Data Analysis and Visualization (Numpy, Pandas, Seaborn, MatPlotLib)",
       value: "Data Analysis and Visualization",
     },
     {
@@ -56,23 +58,48 @@ function InnovateX() {
     const { name, value, type, checked } = event.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: type === "checkbox" ? (checked ? [...prevFormData[name], value] : prevFormData[name].filter(item => item !== value)) : value,
+      [name]:
+        type === "checkbox"
+          ? checked
+            ? [...prevFormData[name], value]
+            : prevFormData[name].filter((item) => item !== value)
+          : value,
     }));
   };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     console.log(formData);
-    // Perform any additional actions here (e.g., send data to backend, etc.)
+    try {
+      await axios.post(
+        "https://iedc-backend.onrender.com/api/v1/innovatex",
+        formData
+      );
+      console.log("Successfully joined!");
+    } catch (err) {
+      console.error(err.message);
+    }
+    setFormData({
+      name: "",
+      mobile: "",
+      email: "",
+      year: 1,
+      college: "",
+      domains: [],
+    });
   };
 
   return (
     <div className="flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8">
-      <h className = "text-center mb-12 block text-4xl font-bold text-white" > InnovateX Workshop  </h>
+      <h className="text-center mb-12 block text-4xl font-bold text-white">
+        {" "}
+        InnovateX Workshop{" "}
+      </h>
       <form onSubmit={handleSubmit}>
-      {formFields.map((field) => (
+        {formFields.map((field) => (
           <div className="form-group mb-4" key={field.name}>
-            <label htmlFor={field.name} className="block font-semibold mb-2">{field.label}:</label>
+            <label htmlFor={field.name} className="block font-semibold mb-2">
+              {field.label}:
+            </label>
             <input
               type={field.type}
               id={field.name}
@@ -86,7 +113,9 @@ function InnovateX() {
         ))}
 
         <div className="form-group mb-4">
-          <label htmlFor="year" className="block font-semibold mb-2">Year of Study:</label>
+          <label htmlFor="year" className="block font-semibold mb-2">
+            Year of Study:
+          </label>
           <select
             id="year"
             name="year"
@@ -95,13 +124,17 @@ function InnovateX() {
             className="text-black w-full px-4 py-2 border rounded"
           >
             {[1, 2, 3, 4].map((year) => (
-              <option key={year} value={year}>{year}</option>
+              <option key={year} value={year}>
+                {year}
+              </option>
             ))}
           </select>
         </div>
 
         <div className="form-group mb-4">
-          <label htmlFor="college" className="block font-semibold mb-2">College:</label>
+          <label htmlFor="college" className="block font-semibold mb-2">
+            College:
+          </label>
           <input
             type="text"
             id="college"
@@ -114,7 +147,9 @@ function InnovateX() {
         </div>
 
         <div className="form-group mb-4">
-          <p className="font-semibold mb-2">Domains you would like to learn more about:</p>
+          <p className="font-semibold mb-2">
+            Domains you would like to learn more about:
+          </p>
           {domainOptions.map((option) => (
             <label className="flex items-center mb-2" key={option.id}>
               <input
@@ -129,14 +164,19 @@ function InnovateX() {
               {option.label}
             </label>
           ))}
-          </div>
-  
-          <div className="form-group mb-4">
-            <button type="submit" className="bg-[#5658dd] text-white px-4 py-2 rounded hover:bg-green-600">Submit</button>
-          </div>
-        </form>
-      </div>
-    );
-  }
-  
-  export default InnovateX;
+        </div>
+
+        <div className="form-group mb-4">
+          <button
+            type="submit"
+            className="bg-[#5658dd] text-white px-4 py-2 rounded hover:bg-green-600"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+export default InnovateX;
