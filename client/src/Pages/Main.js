@@ -63,7 +63,11 @@ function Main() {
       href: "#Achievements",
       sectionRef: achievementsSectionRef,
     },
-    { text: "INO POINTS", href: "#INO", sectionRef: inoSectionRef },
+    {
+      text: "INNOVATE X",
+      href: "#innovateX",
+      sectionRef: innnovateXSectionRef,
+    },
     { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
     { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
     { text: "CAP", href: "/cap", sectionRef: contactSectionRef },
