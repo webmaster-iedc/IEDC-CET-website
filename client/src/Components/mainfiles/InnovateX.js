@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function InnovateX() {
+function InnovateX({ sectionRef }) {
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
     email: "",
-    year: "1st",
+    year: 1,
     college: "",
     domains: [],
   });
@@ -89,7 +89,10 @@ function InnovateX() {
   };
 
   return (
-    <div className="flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8">
+    <div
+      ref={sectionRef}
+      className="flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8"
+    >
       <h className="text-center mb-12 block text-4xl font-bold text-white">
         {" "}
         InnovateX Workshop{" "}
