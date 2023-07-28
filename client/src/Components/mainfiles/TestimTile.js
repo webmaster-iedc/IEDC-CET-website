@@ -1,7 +1,6 @@
 import React from "react";
 
 const TestimTile = ({ testimonial }) => {
-  console.log(testimonial);
   return (
     <div className="testim-tile">
       <img src={testimonial.imageSrc} alt="profile pic" />

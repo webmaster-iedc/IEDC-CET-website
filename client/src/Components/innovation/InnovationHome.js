@@ -13,8 +13,8 @@ function InnovationHome(){
           <div className="md:w-1/2 w-3/4 flex flex-col self-center">
             <img src={Logo} alt="" />
             <p className="text-center text-white text-3xl">Learn through collaboration</p>
-            <button class="w-100 h-30 px-7 py-2 mt-8 rounded-lg bg-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">REGISTER</button>
-            <button class="w-100 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">BROCHURE</button>
+            <button className="w-100 h-30 px-7 py-2 mt-8 rounded-lg bg-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">REGISTER</button>
+            <button className="w-100 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">BROCHURE</button>
             </div>
         </div>
       </div>

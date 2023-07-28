@@ -6,14 +6,14 @@ import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
 import Testim from "../Components/mainfiles/Testim";
 import Footer from "../Components/mainfiles/Socials";
-
+import Timeline from "../Components/ignites/Timeline";
 function Ignites()
 {
 
       const aboutSectionRef = useRef(null);
       const announcementsSectionRef = useRef(null); 
       const highlightsSectionRef = useRef(null);
-      const faqsSectionRef = useRef(null);
+      
       const contactSectionRef = useRef(null);
       const navbarItems = [
         { text: "HOME", href: "/" },
@@ -25,12 +25,13 @@ function Ignites()
       ];
       
     return ( 
-    <div className = "bg-black min-h-screen w-full flex flex-col" >
+    <div className = "bg-[#15191D] min-h-screen w-full flex flex-col" >
         <Navbar navbarItems={navbarItems} />
         <NameLogo />
         <IgnitesAbout />
         <IgnitesGallery />
         <Testim />
+        <Timeline/>
         <ContactPanel />
         <Footer />
         
