@@ -40,9 +40,6 @@ function Main() {
             </span>
           </h5>
           <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
-            <a className="hover:text-gray-300 block" href="/innovation">
-              Innovation
-            </a>
             <a className="hover:text-gray-300 block" href="/ignites">
               IgnitES
             </a>
@@ -64,8 +61,8 @@ function Main() {
       sectionRef: achievementsSectionRef,
     },
     {
-      text: "INNOVATE X",
-      href: "#innovateX",
+      text: "INNOVATION",
+      href: "/innovation",
       sectionRef: innnovateXSectionRef,
     },
     { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },

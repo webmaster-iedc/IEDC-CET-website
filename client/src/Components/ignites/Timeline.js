@@ -50,36 +50,36 @@ export default function Timeline(){
         
     ]
     return( 
-        <div className = "w-3/4 border-t-[1px] border-t-gray-800 pt-12 text-center  space-y-5 self-center mt-4 mb-2 ">
-        <h className = "text-4xl text-white">ignitES 1.0</h>
-        <VerticalTimeline lineColor={ 'purple' }>
+        <div className = "w-3/4 border-t-[1px] border-t-gray-800 pt-12 space-y-5 self-center mt-4 mb-2 ">
+        <h className = "text-4xl text-white font-bold">ignitES 1.0</h>
+        <VerticalTimeline>
             {
             timelineevents1.map((event) =>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(53, 7, 134)' }}
+                    contentStyle={{ background: '#5658dd', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #5658dd' }}
                     date={event.date}
-                    iconStyle={{ background: 'rgb(53, 7, 134)', color: '#8f2173' }}
+                    iconStyle={{ background: '#5658dd', color: '#8f2173' }}
                     //icon={<WorkIcon />}
                     >
                 
-                    <h3 className="vertical-timeline-element-title text-[25px]">{event.title}</h3>
+                    <h3 className="vertical-timeline-element-title text-[25px] font-semibold">{event.title}</h3>
                     
                     <p>{event.detail}</p>
                 </VerticalTimelineElement>
             )}
         </VerticalTimeline>
-        <h1 className = "text-4xl text-white pt-10 pb-5">ignitES 2.0</h1>
-        <VerticalTimeline lineColor={ 'purple' }>
+        <h1 className = "text-4xl text-white font-bold pt-10 pb-5">ignitES 2.0</h1>
+        <VerticalTimeline lineColor={ 'white' }>
             {
             timelineevents2.map((event) =>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(53, 7, 134)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(53, 7, 134)' }}
+                    contentStyle={{ background: '#5658dd', color: '#fff' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #5658dd' }}
                     date={event.date}
-                    iconStyle={{ background: 'rgb(53, 7, 134)', color: '#8f2173' }}
+                    iconStyle={{ background: '#5658dd', color: '#8f2173' }}
                     //icon={<WorkIcon />}
                     >
                 
@@ -89,7 +89,7 @@ export default function Timeline(){
                 </VerticalTimelineElement>
             )}
             <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(53, 7, 134)', color: '#8f2173' }}>
+            iconStyle={{ background: '#fff', color: '#8f2173' }}>
                 
             </VerticalTimelineElement>
         </VerticalTimeline>
