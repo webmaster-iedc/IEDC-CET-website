@@ -13,7 +13,7 @@ export default function UpcomingEvents( {sectionRef}) {
             image: BuildClub,
             registrationLink: "https://example.com/event1/registration",
             brochureLink: "https://example.com/event1/brochure",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. Aenean dictum lacus quis metus congue varius. Quisque sit amet elit eget orci facilisis ornare. Praesent eget rutrum mauris. Etiam auctor augue nec felis sagittis, eu porttitor neque pulvinar. Sed tristique auctor sodales. Sed sit amet elementum ex, sit amet lobortis nibh. Nullam cursus ligula in sapien tristique ultrices. Suspendisse ac nisi a mi condimentum tempus eu quis ligula. Nullam blandit posuere augue. Suspendisse enim nunc, pulvinar non ultrices cursus, molestie quis sem. Cras in tempor justo."
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. "
         },
         {
             eventName: "Young Innovators Program",
@@ -21,7 +21,7 @@ export default function UpcomingEvents( {sectionRef}) {
             image: YIP,
             registrationLink: "https://example.com/event2/registration",
             brochureLink: "https://example.com/event2/brochure",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. Aenean dictum lacus quis metus congue varius. Quisque sit amet elit eget orci facilisis ornare. Praesent eget rutrum mauris. Etiam auctor augue nec felis sagittis, eu porttitor neque pulvinar. Sed tristique auctor sodales. Sed sit amet elementum ex, sit amet lobortis nibh. Nullam cursus ligula in sapien tristique ultrices. Suspendisse ac nisi a mi condimentum tempus eu quis ligula. Nullam blandit posuere augue. Suspendisse enim nunc, pulvinar non ultrices cursus, molestie quis sem. Cras in tempor justo."
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. "
         },
         {
             eventName: "Balm Designathon",
@@ -29,7 +29,7 @@ export default function UpcomingEvents( {sectionRef}) {
             image: Balm,
             registrationLink: "https://example.com/event3/registration",
             brochureLink: "https://example.com/event3/brochure",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. Aenean dictum lacus quis metus congue varius. Quisque sit amet elit eget orci facilisis ornare. Praesent eget rutrum mauris. Etiam auctor augue nec felis sagittis, eu porttitor neque pulvinar. Sed tristique auctor sodales. Sed sit amet elementum ex, sit amet lobortis nibh. Nullam cursus ligula in sapien tristique ultrices. Suspendisse ac nisi a mi condimentum tempus eu quis ligula. Nullam blandit posuere augue. Suspendisse enim nunc, pulvinar non ultrices cursus, molestie quis sem. Cras in tempor justo."
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. "
         },
         {
             eventName: "YIP Ideafest",
@@ -37,13 +37,17 @@ export default function UpcomingEvents( {sectionRef}) {
             image: YipIdeaFest,
             registrationLink: "https://example.com/event4/registration",
             brochureLink: "https://example.com/event4/brochure",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. Aenean dictum lacus quis metus congue varius. Quisque sit amet elit eget orci facilisis ornare. Praesent eget rutrum mauris. Etiam auctor augue nec felis sagittis, eu porttitor neque pulvinar. Sed tristique auctor sodales. Sed sit amet elementum ex, sit amet lobortis nibh. Nullam cursus ligula in sapien tristique ultrices. Suspendisse ac nisi a mi condimentum tempus eu quis ligula. Nullam blandit posuere augue. Suspendisse enim nunc, pulvinar non ultrices cursus, molestie quis sem. Cras in tempor justo."
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. "
         }
     ];
 
     return ( 
     <div  ref={sectionRef} className = "w-3/4 border-t-[1px] border-t-gray-800 pt-12 text-center  space-y-5 self-center mt-4 mb-2 " >
         <h className = "mb-12 block text-4xl font-bold text-white" > Other Events </h> 
+        <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab praesentium vitae, officia facilis maiores adipisci dignissimos vel et voluptatem ut sapiente dolorum possimus culpa. Pariatur eligendi animi unde, sequi, nam quo quibusdam, porro doloribus explicabo nesciunt cumque facilis enim! Beatae, neque! Quas dolores nobis corrupti fugit numquam!</p>
+        <div className="space-y-2 pb-6">
+            <a href="" className="text-white pb-6 font-medium hover:underline underline-offset-4">Read More</a>
+        </div>
         <Slider data = { upcomingEvents }/> 
         </div>
     );

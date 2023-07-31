@@ -6,7 +6,7 @@ import IgnitesAbout from "../Components/ignites/IgnitesAbout";
 import IgnitesGallery from "../Components/ignites/IgnitesGallery";
 import Testim from "../Components/mainfiles/Testim";
 import Footer from "../Components/mainfiles/Socials";
-import Timeline from "../Components/mainfiles/Timeline";
+import Timeline from "../Components/ignites/Timeline";
 function Ignites()
 {
 

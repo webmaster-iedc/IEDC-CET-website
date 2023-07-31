@@ -3,9 +3,11 @@ import Slider from "./Slider2";
 //import statements for images
 import FacultyAdvisor from "../../Assets/Images/Faculty/FA.png"
 import NodalOfficer from "../../Assets/Images/Faculty/NO.png"
+import Principal from "../../Assets/Images/Faculty/Principal.jpg"
+
 export default function Faculty() {
     const faculty = [{
-        image: "",
+        image: Principal,
         name: "Dr. Savier J S",
         role: "Principal",
         email: "principal@cet.ac.in",
