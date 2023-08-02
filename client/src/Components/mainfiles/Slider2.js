@@ -28,17 +28,24 @@ function Slider({data}) {
   }, []);
   return (
     
-       <Swiper
-        slidesPerView={slidesPerView}
-        spaceBetween={20}
-        pagination={{
-          clickable: true,
-        }}
-        
-        modules={[Pagination]}
-        className="mySwiper"
-        centeredSlides={false}
-      >
+    <Swiper
+    slidesPerView={slidesPerView}
+    spaceBetween={20}
+    pagination={{
+      clickable: true,
+    }}
+    
+    modules={[Pagination]}
+    className="mySwiper"
+    centeredSlides={false}
+    style={{
+      "--swiper-pagination-color": "#0cb1ed",
+      "--swiper-pagination-bullet-inactive-color": "#6a6c7a",
+      "--swiper-pagination-bullet-inactive-opacity": "1",
+      "--swiper-pagination-bullet-size": "10px",
+      "--swiper-pagination-bullet-horizontal-gap": "6px"
+    }}
+  >
         {data.map((member, index) => (
         <SwiperSlide key={index}>
           <div className="h-full max-w-sm">

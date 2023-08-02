@@ -46,20 +46,27 @@ function Slider({data}) {
   }, []);
   return (
     
-       <Swiper
-        slidesPerView={slidesPerView}
-        spaceBetween={20}
-        pagination={{
-          clickable: true,
-        }}
-        
-        modules={[Pagination]}
-        className="mySwiper"
-        centeredSlides={false}
-      >
+    <Swiper
+    slidesPerView={slidesPerView}
+    spaceBetween={20}
+    pagination={{
+      clickable: true,
+    }}
+    
+    modules={[Pagination]}
+    className="mySwiper"
+    centeredSlides={false}
+    style={{
+      "--swiper-pagination-color": "#0cb1ed",
+      "--swiper-pagination-bullet-inactive-color": "#6a6c7a",
+      "--swiper-pagination-bullet-inactive-opacity": "1",
+      "--swiper-pagination-bullet-size": "10px",
+      "--swiper-pagination-bullet-horizontal-gap": "6px"
+    }}
+  >
         {data.map((event, index) => (
         <SwiperSlide key={index}>
-          <div className="h-full max-w-sm border border-gray-200 rounded-lg shadow dark:border-gray-700">
+          <div className="h-full max-w-sm border border-gray-200 rounded-lg shadow dark:border-gray-700 mb-10">
            
               <img
                 className="rounded-t-lg"
@@ -70,11 +77,11 @@ function Slider({data}) {
             
             <div className="text-center p-5">
               <a href={event.registrationLink}>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-100">
                   {event.eventName}
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 font-normal text-gray-700 text-gray-400">
                 {event.date}
               </p>
               <div className="items-center flex flex-col space-y-2 text-gray-700 dark:text-gray-400">
