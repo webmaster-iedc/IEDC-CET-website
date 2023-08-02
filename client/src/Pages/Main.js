@@ -34,7 +34,7 @@ function Main() {
       text: (
         <div className="relative group hover:text-gray-500">
           <h5 className="group-hover:text-gray-300 flex items-center transition-all">
-            ALUMNI EVENTS{" "}
+            ALUMNI INITIATIVES{" "}
             <span className="group-hover:rotate-180 transition-all">
               <RiArrowDropDownLine size={30} />
             </span>
