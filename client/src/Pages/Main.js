@@ -82,7 +82,7 @@ function Main() {
       sectionRef: achievementsSectionRef,
     },
     {
-      text: "INNOVATION",
+      text: "IOW",
       href: "/innovation",
       sectionRef: innnovateXSectionRef,
     },
