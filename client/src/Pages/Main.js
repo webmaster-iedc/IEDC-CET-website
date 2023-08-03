@@ -34,7 +34,7 @@ function Main() {
       text: (
         <div className="relative group hover:text-gray-500">
           <h5 className="group-hover:text-gray-300 flex items-center transition-all">
-            ALUMNI EVENTS{" "}
+            ALUMNI INITIATIVES{" "}
             <span className="group-hover:rotate-180 transition-all">
               <RiArrowDropDownLine size={30} />
             </span>
@@ -49,7 +49,28 @@ function Main() {
       href: "",
     },
     { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
-    { text: "EVENTS", href: "#Events", sectionRef: upcomingEventsSectionRef },
+    { text: (
+      <div className="relative group hover:text-gray-500">
+        <h5 className="group-hover:text-gray-300 flex items-center transition-all">
+          EVENTS{" "}
+          <span className="group-hover:rotate-180 transition-all">
+            <RiArrowDropDownLine size={30} />
+          </span>
+        </h5>
+        <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
+          <a className="hover:text-gray-300 block" href="/Innovation">
+            IoW
+          </a>
+          <a className="hover:text-gray-300 block" href="">
+            Maargam
+          </a>
+          <a className="hover:text-gray-300 block" href="">
+            Ideabox
+          </a>
+        </div>
+      </div>
+    ),
+    href: "",},
     {
       text: "ANNOUNCEMENTS",
       href: "#Annoucements",
@@ -61,7 +82,7 @@ function Main() {
       sectionRef: achievementsSectionRef,
     },
     {
-      text: "INNOVATION",
+      text: "IOW",
       href: "/innovation",
       sectionRef: innnovateXSectionRef,
     },
