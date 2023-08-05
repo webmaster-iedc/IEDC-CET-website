@@ -3,21 +3,21 @@ function monthTop()
 {
     const data = [
         {
-          name: 'Mathew h',
+          name: 'test',
           year: '3',
           course: 'B.Tech',
           inoPoints:1,
           email:'test12@gmail.com'
         },
         {
-          name: 'Riz Ms',
+          name: 'test2',
           year: '4',
           course: 'B.tech',
           inoPoints:1,
           email:'test12@gmail.com'
         },
         {
-          name: 'Ned',
+          name: 'test3',
           year: '4',
           course: 'B.Tech',
           inoPoints:1,
