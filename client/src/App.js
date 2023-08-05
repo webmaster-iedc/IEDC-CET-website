@@ -5,6 +5,7 @@ import Innovation from "./Pages/Innovation";
 import Main from './Pages/Main';
 import Ignites from "./Pages/Ignites";
 import CampusAmbassador from "./Pages/CampusAmbassador";
+import InoTable from "./Pages/inoTable";
 function App(){
   return(
     <Router>
@@ -13,6 +14,7 @@ function App(){
         <Route path="/innovation" element={<Innovation />} />
         <Route path="/ignites" element={<Ignites />} />
         <Route path="/cap" element={<CampusAmbassador />} />
+        <Route path="/inoTable" element={<InoTable/>} />
       </Routes>
     </Router>
   )
