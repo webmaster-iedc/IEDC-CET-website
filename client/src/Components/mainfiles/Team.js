@@ -74,14 +74,14 @@ export default function Team() {
     },
     {
         image: CCoO_1,
-        name: "Sarang T K", 
+        name: "Navaneeth P A", 
         role: "Chief Community Officer",
         email: "ccoiedc@cet.ac.in",
         number: "+91 7025140214"
     },
     {
         image:CCoO_2,
-        name: "Navaneeth P A", 
+        name: "Sarang T K", 
         role: "Chief Community Officer",
         email: "ccoiedc@cet.ac.in",
         number: "+91 8129196507"
@@ -130,14 +130,14 @@ export default function Team() {
     },
     {
         image: PO_3,
-        name: "Bharath Krishna", 
+        name: "Varsha Nandakumar", 
         role: "Program Officer",
         email: "poiedc@cet.ac.in",
         number: "+91 9847882852"
     },
     {
         image:PO_4,
-        name: "Varsha Nandakumar", 
+        name: " Bharath Krishna", 
         role: "Programme Officer",
         email: "proiedc@cet.ac.in",
         number: "+91 8281763544"
