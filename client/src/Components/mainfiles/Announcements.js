@@ -1,9 +1,17 @@
 import React from "react";
 import Slider from "./Slider";
-import Quickfolio from "../../Assets/Images/quickfolio.jpg";
+import Quickfolio from "../../Assets/Images/AnnoucementsMain/quickfolio.jpg";
+import iedcSummit from "../../Assets/Images/AnnoucementsMain/iedcSummit.png";
 
 export default function UpcomingEvents( {sectionRef}) {
-    const Announcements = [{
+    const Announcements = [
+        {
+            eventName: "IEDC SUMMIT",
+            date: "IEDC Summit 2023 conducted by KSUM will be conducted as CET this year.",
+            image: iedcSummit,
+            registrationLink: "",
+            brochureLink: ""
+        },{
             eventName: "Quickfolio",
             date: "Sign up for Quickfolio now:  https://www.quickfolio.me/",
             image: Quickfolio,
@@ -16,7 +24,8 @@ export default function UpcomingEvents( {sectionRef}) {
             image: "",
             registrationLink: "",
             brochureLink: ""
-        }
+        },
+        
 
     ];
 
