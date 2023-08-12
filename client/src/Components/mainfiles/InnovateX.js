@@ -89,8 +89,10 @@ function InnovateX({ sectionRef }) {
   };
 
   return (
+    
     <div
       ref={sectionRef}
+     
       className="flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8"
     >
       <h className="text-center mb-12 block text-4xl font-bold text-white">
@@ -179,7 +181,7 @@ function InnovateX({ sectionRef }) {
         </div>
       </form>
     </div>
-  );
+    );
 }
 
 export default InnovateX;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars } from 'react-icons/fa';
 import NavLogo from "../../Assets/Images/navbar/IedcNavbarLogo.png";
-
+ 
 function Navbar({navbarItems}) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const toggleDropDown = () => {
