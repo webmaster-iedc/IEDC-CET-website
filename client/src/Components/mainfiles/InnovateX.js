@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import axios from "axios";
+import LoadingSpinner from "./LoadingSpinner";
 
-function InnovateX({ sectionRef }) {
+function InnovateX() {
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -66,14 +68,16 @@ function InnovateX({ sectionRef }) {
           : value,
     }));
   };
+  const [isLoading, setIsLoading] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    setIsLoading(true);
     try {
       await axios.post(
         "https://iedc-backend.onrender.com/api/v1/innovatex",
         formData
       );
+      setIsLoading(false);
       console.log("Successfully joined!");
     } catch (err) {
       console.error(err.message);
@@ -87,12 +91,18 @@ function InnovateX({ sectionRef }) {
       domains: [],
     });
   };
+  const sectionRef = useRef(null);
+  const location = useLocation();
+  useEffect(() => {
+    if (sectionRef.current && location.hash.slice(1) === "InnovateX") {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 
   return (
-    
     <div
       ref={sectionRef}
-     
+      id="InnovateX"
       className="flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8"
     >
       <h className="text-center mb-12 block text-4xl font-bold text-white">
@@ -171,17 +181,18 @@ function InnovateX({ sectionRef }) {
           ))}
         </div>
 
-        <div className="form-group mb-4">
+        <div className="form-group mb-4 flex items-center gap-5">
           <button
             type="submit"
             className="bg-[#5658dd] text-white px-4 py-2 rounded hover:bg-green-600"
           >
             Submit
           </button>
+          {isLoading && <LoadingSpinner />}
         </div>
       </form>
     </div>
-    );
+  );
 }
 
 export default InnovateX;
