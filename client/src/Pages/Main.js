@@ -1,4 +1,6 @@
-import React, { useRef ,useState,useEffect} from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import "react-vertical-timeline-component/style.min.css";
 import Navbar from "../Components/mainfiles/Navbar";
 import NameLogo from "../Components/mainfiles/NameLogo";
 import FeatureTiles from "../Components/mainfiles/FeatureTiles";
@@ -13,12 +15,9 @@ import Ino from "../Components/mainfiles/InoPoints";
 import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import "react-vertical-timeline-component/style.min.css";
 import InnovateX from "../Components/mainfiles/InnovateX";
 import Newsletter from "../Components/mainfiles/Newsletter";
 import ScrollToTop from "../Components/mainfiles/ScrollToTop";
-//import Events from "../Components/mainfiles/Events";
 
 function Main() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -28,13 +27,13 @@ function Main() {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
-  //main bar components to enable code reusability
+
   const aboutSectionRef = useRef(null);
   const upcomingEventsSectionRef = useRef(null);
   const announcementsSectionRef = useRef(null);
@@ -42,12 +41,9 @@ function Main() {
   const inoSectionRef = useRef(null);
   const testimonialsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
-<<<<<<< HEAD
-  const navbarItems = [
-=======
-  const innnovateXSectionRef = useRef(null);
+  // const innnovateXSectionRef = useRef(null); // Is this supposed to be "inoSectionRef"?
+
   const navbarItemsDesktop = [
->>>>>>> 077bd6a5648d278379a12c05f2106d708797597a
     {
       text: (
         <div className="relative group hover:text-gray-500">
@@ -67,7 +63,6 @@ function Main() {
       href: "",
     },
     { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
-<<<<<<< HEAD
     {
       text: (
         <div className="relative group hover:text-gray-500">
@@ -78,9 +73,6 @@ function Main() {
             </span>
           </h5>
           <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
-            <a className="hover:text-gray-300 block" href="/Innovation">
-              IoW
-            </a>
             <a className="hover:text-gray-300 block" href="/">
               Maargam
             </a>
@@ -88,24 +80,6 @@ function Main() {
               Ideabox
             </a>
           </div>
-=======
-    { text: (
-      <div className="relative group hover:text-gray-500">
-        <h5 className="group-hover:text-gray-300 flex items-center transition-all">
-          EVENTS{" "}
-          <span className="group-hover:rotate-180 transition-all">
-            <RiArrowDropDownLine size={30} />
-          </span>
-        </h5>
-        <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
-          
-          <a className="hover:text-gray-300 block" href="">
-            Maargam
-          </a>
-          <a className="hover:text-gray-300 block" href="">
-            Ideabox
-          </a>
->>>>>>> 077bd6a5648d278379a12c05f2106d708797597a
         </div>
       ),
       href: "",
@@ -120,17 +94,18 @@ function Main() {
       href: "#Achievements",
       sectionRef: achievementsSectionRef,
     },
-    { text: "IOW", href: "/innovation" },
+    {
+      text: "IOW",
+      href: "/innovation",
+    },
     { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
     { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
     { text: "CAP", href: "/cap", sectionRef: contactSectionRef },
   ];
+
   const navbarItemsMobile = [
-    
     { text: "IGNITES", href: "#About", sectionRef: aboutSectionRef },
-   
     { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
-    ,
     {
       text: "ANNOUNCEMENTS",
       href: "#Annoucements",
@@ -144,7 +119,6 @@ function Main() {
     {
       text: "IOW",
       href: "/innovation",
-      sectionRef: innnovateXSectionRef,
     },
     { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
     { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
@@ -192,6 +166,7 @@ function Main() {
         "No, there are no membership fees or prerequisites to join IEDC CET. Yes, you can join IEDC CET even if you dont have a business idea yet. IEDC CET aims at building entrepreneurial qualities in students from scratch, and bring about a culture of idea-driven development in college.",
     },
   ];
+
   return (
     <div className="bg-[#151719] min-h-screen w-full flex flex-col gap-12">
       {/* Desktop Navbar */}
@@ -199,16 +174,15 @@ function Main() {
 
       {/* Mobile Navbar */}
       {isMobile ? <Navbar navbarItems={navbarItemsMobile} /> : null}
+
+      {/* Your components */}
       <NameLogo />
       <FeatureTiles />
       <About sectionRef={aboutSectionRef} />
-
       <Ino sectionRef={inoSectionRef} />
-
       <UpcomingEvents sectionRef={upcomingEventsSectionRef} />
       <Announcements sectionRef={announcementsSectionRef} />
       <Achievements sectionRef={achievementsSectionRef} />
-      {/* <Testimonials sectionRef={testimonialsSectionRef} /> */}
       <Testim />
       <Faculty />
       <Team />
@@ -221,4 +195,5 @@ function Main() {
     </div>
   );
 }
+
 export default Main;
