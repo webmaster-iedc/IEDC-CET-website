@@ -17,6 +17,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import "react-vertical-timeline-component/style.min.css";
 import InnovateX from "../Components/mainfiles/InnovateX";
 import Newsletter from "../Components/mainfiles/Newsletter";
+import ScrollToTop from "../Components/mainfiles/ScrollToTop";
 //import Events from "../Components/mainfiles/Events";
 
 function Main() {
@@ -28,7 +29,6 @@ function Main() {
   const inoSectionRef = useRef(null);
   const testimonialsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
-  const innnovateXSectionRef = useRef(null);
   const navbarItems = [
     {
       text: (
@@ -49,28 +49,30 @@ function Main() {
       href: "",
     },
     { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
-    { text: (
-      <div className="relative group hover:text-gray-500">
-        <h5 className="group-hover:text-gray-300 flex items-center transition-all">
-          EVENTS{" "}
-          <span className="group-hover:rotate-180 transition-all">
-            <RiArrowDropDownLine size={30} />
-          </span>
-        </h5>
-        <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
-          <a className="hover:text-gray-300 block" href="/Innovation">
-            IoW
-          </a>
-          <a className="hover:text-gray-300 block" href="">
-            Maargam
-          </a>
-          <a className="hover:text-gray-300 block" href="">
-            Ideabox
-          </a>
+    {
+      text: (
+        <div className="relative group hover:text-gray-500">
+          <h5 className="group-hover:text-gray-300 flex items-center transition-all">
+            EVENTS{" "}
+            <span className="group-hover:rotate-180 transition-all">
+              <RiArrowDropDownLine size={30} />
+            </span>
+          </h5>
+          <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
+            <a className="hover:text-gray-300 block" href="/Innovation">
+              IoW
+            </a>
+            <a className="hover:text-gray-300 block" href="/">
+              Maargam
+            </a>
+            <a className="hover:text-gray-300 block" href="/">
+              Ideabox
+            </a>
+          </div>
         </div>
-      </div>
-    ),
-    href: "",},
+      ),
+      href: "",
+    },
     {
       text: "ANNOUNCEMENTS",
       href: "#Annoucements",
@@ -81,11 +83,7 @@ function Main() {
       href: "#Achievements",
       sectionRef: achievementsSectionRef,
     },
-    {
-      text: "IOW",
-      href: "/innovation",
-      sectionRef: innnovateXSectionRef,
-    },
+    { text: "IOW", href: "/innovation" },
     { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
     { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
     { text: "CAP", href: "/cap", sectionRef: contactSectionRef },
@@ -138,11 +136,12 @@ function Main() {
       <Testim />
       <Faculty />
       <Team />
-      <InnovateX sectionRef={innnovateXSectionRef} />
+      <InnovateX />
       <FAQSection faqData={faqData} />
       <ContactPanel sectionRef={contactSectionRef} />
       <Newsletter />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
