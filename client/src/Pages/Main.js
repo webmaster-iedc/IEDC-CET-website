@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef ,useState,useEffect} from "react";
 import Navbar from "../Components/mainfiles/Navbar";
 import NameLogo from "../Components/mainfiles/NameLogo";
 import FeatureTiles from "../Components/mainfiles/FeatureTiles";
@@ -21,6 +21,19 @@ import ScrollToTop from "../Components/mainfiles/ScrollToTop";
 //import Events from "../Components/mainfiles/Events";
 
 function Main() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   //main bar components to enable code reusability
   const aboutSectionRef = useRef(null);
   const upcomingEventsSectionRef = useRef(null);
@@ -29,7 +42,12 @@ function Main() {
   const inoSectionRef = useRef(null);
   const testimonialsSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+<<<<<<< HEAD
   const navbarItems = [
+=======
+  const innnovateXSectionRef = useRef(null);
+  const navbarItemsDesktop = [
+>>>>>>> 077bd6a5648d278379a12c05f2106d708797597a
     {
       text: (
         <div className="relative group hover:text-gray-500">
@@ -49,6 +67,7 @@ function Main() {
       href: "",
     },
     { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
+<<<<<<< HEAD
     {
       text: (
         <div className="relative group hover:text-gray-500">
@@ -69,6 +88,24 @@ function Main() {
               Ideabox
             </a>
           </div>
+=======
+    { text: (
+      <div className="relative group hover:text-gray-500">
+        <h5 className="group-hover:text-gray-300 flex items-center transition-all">
+          EVENTS{" "}
+          <span className="group-hover:rotate-180 transition-all">
+            <RiArrowDropDownLine size={30} />
+          </span>
+        </h5>
+        <div className="text-center md:text-left md:absolute md:opacity-0 md:group-hover:opacity-100 transition-opacity px-4 md:border-l-2 border-gray-500">
+          
+          <a className="hover:text-gray-300 block" href="">
+            Maargam
+          </a>
+          <a className="hover:text-gray-300 block" href="">
+            Ideabox
+          </a>
+>>>>>>> 077bd6a5648d278379a12c05f2106d708797597a
         </div>
       ),
       href: "",
@@ -87,6 +124,41 @@ function Main() {
     { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
     { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
     { text: "CAP", href: "/cap", sectionRef: contactSectionRef },
+  ];
+  const navbarItemsMobile = [
+    
+    { text: "IGNITES", href: "#About", sectionRef: aboutSectionRef },
+   
+    { text: "ABOUT", href: "#About", sectionRef: aboutSectionRef },
+    ,
+    {
+      text: "ANNOUNCEMENTS",
+      href: "#Annoucements",
+      sectionRef: announcementsSectionRef,
+    },
+    {
+      text: "ACHIEVEMENTS",
+      href: "#Achievements",
+      sectionRef: achievementsSectionRef,
+    },
+    {
+      text: "IOW",
+      href: "/innovation",
+      sectionRef: innnovateXSectionRef,
+    },
+    { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
+    { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
+    { text: "CAP", href: "/cap", sectionRef: contactSectionRef },
+    {
+      text: "MAARGAM",
+      href: "#Annoucements",
+      sectionRef: announcementsSectionRef,
+    },
+    {
+      text: "IDEABOX",
+      href: "#Annoucements",
+      sectionRef: announcementsSectionRef,
+    },
   ];
   const faqData = [
     {
@@ -122,7 +194,11 @@ function Main() {
   ];
   return (
     <div className="bg-[#151719] min-h-screen w-full flex flex-col gap-12">
-      <Navbar navbarItems={navbarItems} />
+      {/* Desktop Navbar */}
+      {isMobile ? null : <Navbar navbarItems={navbarItemsDesktop} />}
+
+      {/* Mobile Navbar */}
+      {isMobile ? <Navbar navbarItems={navbarItemsMobile} /> : null}
       <NameLogo />
       <FeatureTiles />
       <About sectionRef={aboutSectionRef} />
