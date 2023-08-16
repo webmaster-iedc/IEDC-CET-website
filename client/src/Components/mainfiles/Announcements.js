@@ -20,7 +20,7 @@ export default function UpcomingEvents( {sectionRef}) {
         },
         {
             eventName: "INO POINTS",
-            date: "Introducing 𝗜𝗡𝗢 𝗣𝗢𝗜𝗡𝗧𝗦 A revolution in how CET thinks.𝗧",
+            date: "Introducing 𝗜𝗡𝗢 𝗣𝗢𝗜𝗡𝗧𝗦 A revolution in how CET thinks",
             image: "",
             registrationLink: "",
             brochureLink: ""
