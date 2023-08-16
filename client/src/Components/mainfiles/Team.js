@@ -55,7 +55,7 @@ export default function Team() {
         image: CTO,
         name: "Yena Sunil Kumar", 
         role: "Chief Technical Officer",
-        email: "cooiedc@cet.ac.in",
+        email: "ctoiedc@cet.ac.in",
         number: "+91 7025247468"
     },
     {
@@ -67,10 +67,10 @@ export default function Team() {
     },
     {
         image:CMO_2,
-        name: "Gautam Lakshman", 
+        name: "Joel S Thomas", 
         role: "Chief Marketing Officer",
         email: "cmoiedc@cet.ac.in",
-        number: "+91 8714438004"
+        number: "+91 8597005255"
     },
     {
         image: CCoO_1,
