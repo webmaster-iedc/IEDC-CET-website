@@ -74,7 +74,7 @@ function InnovateX() {
     setIsLoading(true);
     try {
       await axios.post(
-        "https://iedc-backend.onrender.com/api/v1/innovatex",
+        "https://iedc-backend-api.onrender.com/api/v1/innovatex",
         formData
       );
       setIsLoading(false);

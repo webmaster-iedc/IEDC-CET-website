@@ -13,9 +13,12 @@ function Newsletter() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      await axios.post("https://iedc-backend.onrender.com/api/v1/newsletter", {
-        email,
-      });
+      await axios.post(
+        "https://iedc-backend-api.onrender.com/api/v1/newsletter",
+        {
+          email,
+        }
+      );
       setIsLoading(false);
       setEmail("");
     } catch (err) {
