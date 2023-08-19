@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
+import LoadingSpinner from "./LoadingSpinner";
 
 function Newsletter() {
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const handleInput = (e) => {
     setEmail(e.target.value);
   };
 
   const handleEmailSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       await axios.post("https://iedc-backend.onrender.com/api/v1/newsletter", {
         email,
       });
+      setIsLoading(false);
       setEmail("");
     } catch (err) {
       console.error(err);
@@ -40,6 +44,8 @@ function Newsletter() {
         >
           Subscribe
         </button>
+
+        {isLoading && <LoadingSpinner />}
       </form>
     </div>
   );
