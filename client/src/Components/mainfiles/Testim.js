@@ -12,7 +12,7 @@ const Testim = () => {
       name: "Athira",
 
       imageSrc: Athira,
-
+      batch:"S2 Test",
       description:
         "It was a wonderful experience. We did learn a lot  through the workshop.The workshop helped us a lot to improve ourselves",
     },
@@ -20,15 +20,15 @@ const Testim = () => {
       name: "Ann Mariya Binoy",
 
       imageSrc: Ann,
-
+      batch:"S2 Test",
       description:
-        "The startup workshop was very useful for us.... We have learned many things for example how to develop an idea, how to implement it,etc.... Along with this classes was very much relevant and useful. We got an idea about how to improve on our project... We only just had an idea but the workshop helped us to improve our idea and work on it.... The idea pitching competition was also so good.. We got an idea where we need to change, improve etc.... All the mentors was very helpful in clearing our doubts.... Overall it was a wonderful section... Thank you iedc CET",
+        "The startup workshop was very useful for us. We learned many things, for example, how to develop an idea, how to implement it, etc. Along with this, the classes were very relevant and useful. We got an idea about how to improve on our project. We only had an idea, but the workshop helped us to improve our idea and work on it. The idea pitching competition was also very good. It gave us an idea of where we need to change, improve, etc. All of the mentors were very helpful in clearing our doubts. Overall, it was a wonderful session. Thank you, IEDC CET",
     },
     {
       name: "Sreekanth Sreekumar",
 
       imageSrc: Sreekanth,
-
+      batch:"S5 EEE CET",
       description:
         "The startup workshop series conducted by IEDC was wonderful. The workshop sessions were fun and covered many relevant topics required for startups such as business models and funding strategies. The interactive activities taught us about collaboration and networking. The quiz at the end were really helpful in evaluating ourselves.",
     },

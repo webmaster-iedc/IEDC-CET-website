@@ -7,6 +7,7 @@ const TestimTile = ({ testimonial }) => {
       <div className="testimonial-data">
         <p>{testimonial.description}</p>
         <div>{testimonial.name}</div>
+        <p  >{testimonial.batch}</p>
       </div>
     </div>
   );

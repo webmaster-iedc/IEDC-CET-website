@@ -11,13 +11,13 @@ export default function Faculty() {
         name: "Dr. Savier J S",
         role: "Principal",
         email: "principal@cet.ac.in",
-        number: "+91 0000000000"
+        number: "+91 8547426742"
     },
     {
         image: FacultyAdvisor,
         name: "Dr. Gijoy S",
         role: "Faculty Advisor",
-        email: "email@email.com",
+        email: "dr.gijoys@cet.ac.in",
         number: "+91 9496330263",
     }, 
     {

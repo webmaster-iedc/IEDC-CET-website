@@ -7,7 +7,7 @@ export default function UpcomingEvents( {sectionRef}) {
     const Announcements = [
         {
             eventName: "IEDC SUMMIT",
-            date: "IEDC Summit 2023 conducted by KSUM will be conducted as CET this year.",
+            date: "IEDC Summit 2023 conducted by KSUM will be conducted at CET this year.",
             image: iedcSummit,
             registrationLink: "",
             brochureLink: ""
