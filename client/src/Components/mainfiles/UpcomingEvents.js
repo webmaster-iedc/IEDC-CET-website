@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "./SliderEvents";
 import BuildClub from "../../Assets/Images/UpcomingEvents/buildclub.jpg";
-import YIP from "../../Assets/Images/UpcomingEvents/yip.jpg";
 
 import YipIdeaFest from "../../Assets/Images/UpcomingEvents/yipideafest.jpg";
 
@@ -15,14 +14,7 @@ export default function UpcomingEvents( {sectionRef}) {
             brochureLink: "https://example.com/event1/brochure",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. "
         },
-        {
-            eventName: "Young Innovators Program",
-            date: "07/06/2023",
-            image: YIP,
-            registrationLink: "https://example.com/event2/registration",
-            brochureLink: "https://example.com/event2/brochure",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. "
-        },
+        
         
         {
             eventName: "YIP Ideafest",
