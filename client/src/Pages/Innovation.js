@@ -10,7 +10,6 @@ import InnovationHighlights from "../Components/innovation/InnovationHiglights";
 import InnovationAnnoucements from "../Components/innovation/InnovationAnnoucements";
 import InnovationContact from "../Components/innovation/InnovationContact";
 import ScrollToTop from "../Components/mainfiles/ScrollToTop";
-
 function Innovation() {
   const aboutSectionRef = useRef(null);
   const announcementsSectionRef = useRef(null);
@@ -74,6 +73,7 @@ function Innovation() {
       <div className="z-20 min-h-screen w-full flex flex-col">
         <Navbar navbarItems={navbarItems} />
         <InnovationHome />
+       
         <InnovationAbout sectionRef={aboutSectionRef} />
         <InnovationProcess />,
         <InnovationAnnoucements sectionRef={announcementsSectionRef} />
