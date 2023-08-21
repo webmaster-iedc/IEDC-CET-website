@@ -15,6 +15,8 @@ function Ino( {sectionRef}) {
         </div>
         <video width={528} height={290.4} controls src={iedcvideo} />
       </div>
+      <button className="bg-[#5658dd] text-white px-4 py-2 rounded hover:bg-green-600"
+          ><a href="/inoTable">View Ino Table</a></button>
     </div>
   );
 }

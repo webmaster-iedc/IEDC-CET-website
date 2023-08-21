@@ -15,7 +15,7 @@ import Ino from "../Components/mainfiles/InoPoints";
 import FAQSection from "../Components/mainfiles/FAQmain";
 import Faculty from "../Components/mainfiles/Faculty";
 import Team from "../Components/mainfiles/Team";
-import InnovateX from "../Components/mainfiles/InnovateX";
+//import InnovateX from "../Components/mainfiles/InnovateX";
 import Newsletter from "../Components/mainfiles/Newsletter";
 import ScrollToTop from "../Components/mainfiles/ScrollToTop";
 
@@ -186,7 +186,7 @@ function Main() {
       <Testim />
       <Faculty />
       <Team />
-      <InnovateX />
+   
       <FAQSection faqData={faqData} />
       <ContactPanel sectionRef={contactSectionRef} />
       <Newsletter />

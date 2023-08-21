@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../Assets/Images/InnovationHome/innovation-logo.png";
-
+import InnovateX from "./InnovateX";
 function InnovationHome() {
+  const [form,setFormVisible]=useState(false);
   return (
     <div className="text-white flex flex-col w-full h-fit justify-center items-center">
       <div className="w-full flex text-center flex-col lg:w-3/4">
@@ -15,16 +16,19 @@ function InnovationHome() {
           <p className="text-center text-white text-3xl">
             Learn through collaboration
           </p>
-          <Link
-            to="/#InnovateX"
+          <button
+            onClick={()=>{setFormVisible(true);}}
             className="w-100 h-30 px-7 py-2 mt-8 rounded-lg bg-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center"
           >
             REGISTER
-          </Link>
+          </button>
+          
           <button className="w-100 h-30 px-7 py-2 mt-3 rounded-lg border-2 border-[#9E130A] text-poppins text-24 font-semibold leading-36 text-white text-center">
             BROCHURE
           </button>
+          
         </div>
+        {form&&<InnovateX/>}
       </div>
     </div>
   );

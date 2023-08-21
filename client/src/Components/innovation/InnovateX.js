@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import LoadingSpinner from "./LoadingSpinner";
+import LoadingSpinner from "../mainfiles/LoadingSpinner";
 
 function InnovateX() {
   const [formData, setFormData] = useState({
@@ -103,7 +103,7 @@ function InnovateX() {
     <div
       ref={sectionRef}
       id="InnovateX"
-      className="flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8"
+      className=" flex flex-col lg:w-1/2 w-3/4 self-center text-white mt-8"
     >
       <h className="text-center mb-12 block text-4xl font-bold text-white">
         {" "}
@@ -184,7 +184,7 @@ function InnovateX() {
         <div className="form-group mb-4 flex items-center gap-5">
           <button
             type="submit"
-            className="bg-[#5658dd] text-white px-4 py-2 rounded hover:bg-green-600"
+            className="bg-[#9E130A] text-white px-4 py-2 rounded hover:bg-green-600"
           >
             Submit
           </button>
