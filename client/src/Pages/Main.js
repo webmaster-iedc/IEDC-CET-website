@@ -85,6 +85,11 @@ function Main() {
       href: "",
     },
     {
+      text: "IEDC Summit 2023",
+      href: "https://iedcsummit.in/",
+      sectionRef: "",
+    },
+    {
       text: "ANNOUNCEMENTS",
       href: "#Annoucements",
       sectionRef: announcementsSectionRef,
@@ -98,8 +103,7 @@ function Main() {
       text: "IOW",
       href: "/innovation",
     },
-    { text: "TEAM", href: "#Testimonials", sectionRef: testimonialsSectionRef },
-    { text: "CONTACT", href: "#Contacts", sectionRef: contactSectionRef },
+    { text: "TEAM", href: "#Team", sectionRef: testimonialsSectionRef },
     { text: "CAP", href: "/cap", sectionRef: contactSectionRef },
   ];
 
@@ -115,6 +119,11 @@ function Main() {
       text: "ACHIEVEMENTS",
       href: "#Achievements",
       sectionRef: achievementsSectionRef,
+    },
+    {
+      text: "IEDC Summit 2023",
+      href: "https://iedcsummit.in/",
+      sectionRef: "",
     },
     {
       text: "IOW",
@@ -186,7 +195,7 @@ function Main() {
       <Testim />
       <Faculty />
       <Team />
-   
+
       <FAQSection faqData={faqData} />
       <ContactPanel sectionRef={contactSectionRef} />
       <Newsletter />
