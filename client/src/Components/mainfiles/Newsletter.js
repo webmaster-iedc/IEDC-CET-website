@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import LoadingSpinner from "./LoadingSpinner";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function Newsletter() {
   const [email, setEmail] = useState("");
@@ -50,6 +51,14 @@ function Newsletter() {
 
         {isLoading && <LoadingSpinner />}
       </form>
+      <div className="flex justify-center items-center gap-4 text-white text-4xl md:mt-8">
+        <h1 className="">
+          Follow our WhatsApp Channel
+        </h1>
+        <a href="https://whatsapp.com/channel/0029VaDjzCcAInPqNjl4VJ1u" target="_blank">
+          <FaExternalLinkAlt className="text-3xl font-medium"/>
+        </a>
+      </div>
     </div>
   );
 }
