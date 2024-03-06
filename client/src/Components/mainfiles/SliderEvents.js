@@ -12,22 +12,26 @@ const ReadMoreText = ({ children }) => {
   const isBig = text.length > textLen;
   const [ReadMore, setReadMore] = useState(true);
   const toggleReading = () => {
-      setReadMore(!ReadMore);
+    setReadMore(!ReadMore);
   };
   return (
-      <p>
-          {isBig ? (ReadMore ? text.slice(0, textLen)+"..." : text) : text}
-          {isBig ? <span onClick = {toggleReading} className="block text-white underline cursor-pointer">
-              {ReadMore ? "read more" : "show less"}
-          </span> : <p></p>}
-      </p>
-  )
-}
+    <p>
+      {isBig ? (ReadMore ? text.slice(0, textLen) + "..." : text) : text}
+      {isBig ? (
+        <span
+          onClick={toggleReading}
+          className="block text-white underline cursor-pointer"
+        >
+          {ReadMore ? "read more" : "show less"}
+        </span>
+      ) : (
+        <p></p>
+      )}
+    </p>
+  );
+};
 
-function Slider({data}) {
-  
-  
-  
+function Slider({ data }) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   useEffect(() => {
     const handleResize = () => {
@@ -39,42 +43,40 @@ function Slider({data}) {
       } else {
         setSlidesPerView(3);
       }
-    };handleResize();
+    };
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    
     <Swiper
-    slidesPerView={slidesPerView}
-    spaceBetween={20}
-    pagination={{
-      clickable: true,
-    }}
-    
-    modules={[Pagination]}
-    className="mySwiper"
-    centeredSlides={false}
-    style={{
-      "--swiper-pagination-color": "#0cb1ed",
-      "--swiper-pagination-bullet-inactive-color": "#6a6c7a",
-      "--swiper-pagination-bullet-inactive-opacity": "1",
-      "--swiper-pagination-bullet-size": "10px",
-      "--swiper-pagination-bullet-horizontal-gap": "6px"
-    }}
-  >
-        {data.map((event, index) => (
+      slidesPerView={slidesPerView}
+      spaceBetween={20}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination]}
+      className="mySwiper"
+      centeredSlides={false}
+      style={{
+        "--swiper-pagination-color": "#0cb1ed",
+        "--swiper-pagination-bullet-inactive-color": "#6a6c7a",
+        "--swiper-pagination-bullet-inactive-opacity": "1",
+        "--swiper-pagination-bullet-size": "10px",
+        "--swiper-pagination-bullet-horizontal-gap": "6px",
+      }}
+    >
+      {data.map((event, index) => (
         <SwiperSlide key={index}>
           <div className="h-full max-w-sm border border-gray-200 rounded-lg shadow dark:border-gray-700 mb-10">
-           
-              <img
-                className="rounded-t-lg"
-                src={event.image}
-                alt=""
-                style={{ width: '536px', height: '354px' }}
-              />
-            
+            <img
+              className="rounded-t-lg"
+              src={event.image}
+              alt=""
+              style={{ width: "536px", height: "354px" }}
+            />
+
             <div className="text-center p-5">
               <a href={event.registrationLink}>
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-100">
@@ -85,17 +87,21 @@ function Slider({data}) {
                 {event.date}
               </p>
               <div className="items-center flex flex-col space-y-2 text-gray-700 dark:text-gray-400">
-                {/* <ReadMoreText>
-                  {event.content}
-                </ReadMoreText> */}
+                <ReadMoreText>{event.content}</ReadMoreText>
                 {/* <p>{event.content}</p> */}
-                {event.brochureLink!== "" && (
-                  <a href={event.brochureLink} className="inline-flex pt-4 items-center text-white hover:underline underline-offset-2">
+                {event.brochureLink !== "" && (
+                  <a
+                    href={event.brochureLink}
+                    className="inline-flex pt-4 items-center text-white hover:underline underline-offset-2"
+                  >
                     View Brochure
                   </a>
                 )}
-                {event.registrationLink!== "" && (
-                  <a href={event.brochureLink} className="inline-flex items-center px-10 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                {event.registrationLink !== "" && (
+                  <a
+                    href={event.brochureLink}
+                    className="inline-flex items-center px-10 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
                     Register
                   </a>
                 )}
@@ -104,9 +110,7 @@ function Slider({data}) {
           </div>
         </SwiperSlide>
       ))}
-      </Swiper>
-      
-    
+    </Swiper>
   );
 }
 

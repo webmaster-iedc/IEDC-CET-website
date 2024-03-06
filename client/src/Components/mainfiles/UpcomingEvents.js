@@ -1,29 +1,35 @@
 import React from "react";
 import Slider from "./SliderEvents";
 import BuildClub from "../../Assets/Images/UpcomingEvents/buildclub.jpg";
-
+import HackRun from "../../Assets/Images/UpcomingEvents/hackrun.jpg";
 import YipIdeaFest from "../../Assets/Images/UpcomingEvents/yipideafest.jpg";
 
 export default function UpcomingEvents({ sectionRef }) {
   const upcomingEvents = [
     {
+      eventName: "Kerala Hack Run",
+      date: "07/03/2024",
+      image: HackRun,
+      registrationLink: "",
+      brochureLink: "",
+      content:
+        "Join us for the KERALA HACK RUN brought to you by TechByHeart, IEDC CET, DHRISHTI'24 and CORaL CET.",
+    },
+    {
       eventName: "Build Club",
-      date: "2023-07-15",
+      date: "15/07/2023",
       image: BuildClub,
       registrationLink: "https://example.com/event1/registration",
       brochureLink: "https://example.com/event1/brochure",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. ",
+      content: "",
     },
-
     {
       eventName: "YIP Ideafest",
       date: "07/06/2023",
       image: YipIdeaFest,
       registrationLink: "https://example.com/event4/registration",
       brochureLink: "https://example.com/event4/brochure",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim nunc, venenatis eget vehicula at, hendrerit eget nisi. Ut imperdiet augue a tortor vehicula, non rutrum mauris efficitur. Morbi scelerisque ullamcorper magna, eget pharetra tellus condimentum non. Nunc lacus ipsum, feugiat non magna id, elementum elementum diam. Aliquam venenatis mollis convallis. ",
+      content: "",
     },
   ];
 
