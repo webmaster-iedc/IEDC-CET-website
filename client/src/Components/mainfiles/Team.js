@@ -17,77 +17,77 @@ export default function Team() {
         name: "Treasa Mariya",
         role: "Student Lead",
         email: "ceoiedc@cet.ac.in",
-        number: "+91 7909290803"
+        number: "+91 9400843439"
     },
     {
         image: SL2,
         name: "Usman A Asan",
         role: "Student Lead",
-        email: "cfoiedc@cet.ac.in",
-        number: "+91 6235741611",
+        email: "ceoiedc@cet.ac.in",
+        number: "+91 7736717252 ",
     }, 
     {
         image: CFO,
         name: "Muhammad Alfas", 
         role: "Chief Finance Officer",
-        email: "cooiedc@cet.ac.in",
-        number: "+91 9747104733"
+        email: "cfoiedc@cet.ac.in",
+        number: "+91 9745091733"
     },
     {
         image: IFR,
         name: "Sarang T K", 
         role: "IFR & Research Lead",
-        email: "ccoiedc@cet.ac.in",
-        number: "+91 7994764846"
+        email: "ccoiedc@cet.ac.in", //not updated
+        number: "+91 7025140214"
     },
     {
         image: CMO,
         name: "Edwin Emmanuel Roy", 
         role: "Chief Marketing Officer",
-        email: "ctoiedc@cet.ac.in",
-        number: "+91 7025247468"
+        email: "cmoiedc@cet.ac.in",
+        number: "+91 8113859251"
     },
     {
         image: CDO,
         name: "Afreen Nishad", 
         role: "Chief Design Officer",
-        email: "cmoiedc@cet.ac.in",
-        number: "+91 9061354702"
+        email: "cmoiedc@cet.ac.in",// not updated
+        number: "+91 8921063207"
     },
     {
         image:COO,
         name: "Aswin U M", 
         role: "Chief Operating Officer",
-        email: "cmoiedc@cet.ac.in",
-        number: "+91 8597005255"
+        email: "cmoiedc@cet.ac.in",// not updated
+        number: "+91 9074967129"
     },
     {
         image: PAL,
         name: "Niranjana G Nair", 
         role: "Public Affairs Lead",
-        email: "ccoiedc@cet.ac.in",
-        number: "+91 7025140214"
+        email: "ccoiedc@cet.ac.in",// not updated
+        number: "+91 " // not updated
     },
     {
         image:WIL,
         name: "Decika J U", 
         role: "Woman Innovation Lead",
-        email: "ccoiedc@cet.ac.in",
-        number: "+91 8129196507"
+        email: "ccoiedc@cet.ac.in",// not updated
+        number: "+91 8848599467"
     },
     {
         image: CTO,
         name: "Asna Gafoor", 
         role: "Chief Technical Officer",
-        email: "iedc@cet.ac.in",
-        number: "+91 0000000000"
+        email: "iedc@cet.ac.in",// not updated
+        number: "+91 9072777246"
     },
     {
         image: COO2,
         name: "Christo Stanly", 
         role: "Chief Operating Officer",
-        email: "iedc@cet.ac.in",
-        number: "+91 8075081397"
+        email: "iedc@cet.ac.in",// not updated
+        number: "+91 9747104733"
     }
 ]
 
