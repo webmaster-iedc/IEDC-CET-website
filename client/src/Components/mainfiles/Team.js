@@ -37,7 +37,7 @@ export default function Team() {
         image: IFR,
         name: "Sarang T K", 
         role: "IFR & Research Lead",
-        email: "ccoiedc@cet.ac.in", //not updated
+        email: "tksarang2002@gmail.com", 
         number: "+91 7025140214"
     },
     {
@@ -51,42 +51,42 @@ export default function Team() {
         image: CDO,
         name: "Afreen Nishad", 
         role: "Chief Design Officer",
-        email: "cmoiedc@cet.ac.in",// not updated
+        email: "afreennishadkunju@gmail.com",
         number: "+91 8921063207"
     },
     {
         image:COO,
         name: "Aswin U M", 
         role: "Chief Operating Officer",
-        email: "cmoiedc@cet.ac.in",// not updated
+        email: "cooiedc@cet.ac.in",
         number: "+91 9074967129"
     },
     {
         image: PAL,
         name: "Niranjana G Nair", 
         role: "Public Affairs Lead",
-        email: "ccoiedc@cet.ac.in",// not updated
-        number: "+91 " // not updated
+        email: "proiedc@cet.ac.in",
+        number: "+91 95624 21161"
     },
     {
         image:WIL,
         name: "Decika J U", 
-        role: "Woman Innovation Lead",
-        email: "ccoiedc@cet.ac.in",// not updated
+        role: "Women Innovation Lead",
+        email: "iedc@cet.ac.in",
         number: "+91 8848599467"
     },
     {
         image: CTO,
         name: "Asna Gafoor", 
         role: "Chief Technical Officer",
-        email: "iedc@cet.ac.in",// not updated
+        email: "ctoiedc@cet.ac.in",
         number: "+91 9072777246"
     },
     {
         image: COO2,
         name: "Christo Stanly", 
         role: "Chief Operating Officer",
-        email: "iedc@cet.ac.in",// not updated
+        email: "cooiedc@cet.ac.in",
         number: "+91 9747104733"
     }
 ]
