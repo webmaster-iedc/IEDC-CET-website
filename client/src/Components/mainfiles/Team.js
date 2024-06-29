@@ -1,16 +1,16 @@
 import React from "react";
 import Slider from "./Slider2";
-import SL from "../../Assets/Images/Teams/SL.png"
-import SL2 from "../../Assets/Images/Teams/SL_2.png"
-import CDO from "../../Assets/Images/Teams/CDO.jpeg"
-import CFO from "../../Assets/Images/Teams/CFO.jpg"
+import SL from "../../Assets/Images/Teams/SL.jpg"
+import SL2 from "../../Assets/Images/Teams/SL_2.jpg"
+import CDO from "../../Assets/Images/Teams/CDO.JPG"
+import CFO from "../../Assets/Images/Teams/CFO.jpeg"
 import CMO from "../../Assets/Images/Teams/CMO.jpg"
 import COO2 from "../../Assets/Images/Teams/COO_2.jpg"
 import COO from "../../Assets/Images/Teams/COO.jpg"
-import CTO from "../../Assets/Images/Teams/CTO.png"
-import IFR from "../../Assets/Images/Teams/IFR.JPG"
-import PAL from "../../Assets/Images/Teams/PAL.jpg"
-import WIL from "../../Assets/Images/Teams/WIL.jpeg"
+import CTO from "../../Assets/Images/Teams/CTO.jpg"
+import IFR from "../../Assets/Images/Teams/IFR.jpg"
+import PAL from "../../Assets/Images/Teams/PAL.JPG"
+import WIL from "../../Assets/Images/Teams/WIL.jpg"
 export default function Team() {
     const team = [{
         image: SL,
